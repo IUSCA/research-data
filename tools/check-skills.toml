@@ -1,0 +1,44 @@
+# Settings for tools/check-skills.py in research-data.
+# The checker is identical in every repository of this family; only this
+# file differs. See the checker's docstring for what each setting drives.
+
+# Markers this repository defines in README.md.
+markers = ["Required", "Recommended", "Observed", "External", "Practice", "Open item"]
+
+# What counts as naming a binding source for a **Required** statement:
+# IU policy numbers, regulations, sponsor notices, and the data's own terms.
+required_source = '''DM-0\d|UA-\d+|IT-\d+|RP-\d|ACA-\d|KB\d{7}|\d+ CFR|NOT-OD-\d+-\d+|NSF \d+-\d+|HRPP|HIPAA|EAR|ITAR|GDPR|FERPA|NIST SP|policy|policies|regulation|law|agreement|license|terms|DUA|DURA|Grants Policy Statement|matrix|per|ORA|incident reporting'''
+
+# Ids that must also appear in a skill's Sources list when cited in its text.
+cited_ids = ['KB\d{7}', 'NOT-[A-Z]{2}-\d{2}-\d{3}']
+
+# A skill whose oldest Verified date is older than this prints STALE.
+stale_after_days = 120
+
+# Shared office and service addresses that may appear. Add one only after
+# checking it is a role address on an official page, not a person's.
+allowed_emails = [
+  "askrds@regenstrief.org", "datard@iu.edu", "dataserv@iu.edu",
+  "datastu@iu.edu", "export@iu.edu", "gdpr@iu.edu", "hipaa@iu.edu",
+  "irb@iu.edu", "it-incident@iu.edu", "iudata@iu.edu", "iurdc@iu.edu",
+  "kb@iu.edu", "resdata@iu.edu", "rsohelp@iu.edu",
+  "securemyresearch@iu.edu", "ssrc@iu.edu",
+]
+
+# Internal hostnames never appear. Public skills name the service.
+internal_hosts = '[\w.-]*bioloop[\w.-]*\.iu\.edu|[\w.-]+\.sca\.iu\.edu'
+
+[links]
+user_agent = "research-data-skills"
+# These hosts answer scripted requests with 403.
+skip_403_hosts = ["spg.umich.edu", "www.regenstrief.org", "osome.iu.edu"]
+skip_urls = []
+
+[freshness]
+# Run each Monday by .github/workflows/freshness.yml.
+checks = ["kb", "links"]
+
+[[freshness.commands]]
+name = "Research Data Catalog"
+run = "python3 .agents/skills/finding-iu-research-data/scripts/rdc_catalog.py check"
+step = "step 2 of MAINTAINING.md"
