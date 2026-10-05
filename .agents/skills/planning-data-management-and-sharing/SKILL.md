@@ -88,7 +88,7 @@ current. It should settle:
 3. **Agreements.** Every DUA, license, and consent limit that governs the
    data, with where each is filed.
 4. **Storage and computing.** Systems approved for the classification. The
-   research-technologies `planning-research-computing-work` skill helps.
+   research-technologies [`planning-research-computing-work`](https://github.com/IUSCA/research-technologies/tree/main/.agents/skills/planning-research-computing-work) skill helps.
 5. **Sharing.** What will be shared, when, where, and under what access. See
    `sharing-research-data`.
 6. **Retention and disposal.** How long, where, and who decides on disposal.

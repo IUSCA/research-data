@@ -112,7 +112,7 @@ controlled tiers need registration and the program's training.
 - **Required.** Approval for PHI on a system does not meet your HIPAA duties.
   Add your own administrative, physical, and technical safeguards (KB0023515).
 - Where PHI may be stored and computed on is covered by the
-  `iu-research-computing-map` skill in the research-technologies repository.
+  [`iu-research-computing-map`](https://github.com/IUSCA/research-technologies/tree/main/.agents/skills/iu-research-computing-map) skill in the research-technologies repository.
   `classifying-research-data` covers the classification itself.
 - **Required.** The human subjects data rules in the HRPP Research Data
   Management policy apply: retention of at least three years, and longer for

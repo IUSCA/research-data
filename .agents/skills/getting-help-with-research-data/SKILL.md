@@ -31,7 +31,7 @@ front door. It routes questions it cannot answer.
 | INPC, IU Health, or Eskenazi data | Regenstrief Data Services | askrds@regenstrief.org |
 | ICPSR, RADaRS, HCUP | Social Science Research Commons (SSRC) | ssrc@iu.edu |
 | A specific catalog dataset | The entry's Public Contact | See `finding-iu-research-data` |
-| Clusters, storage systems, allocations | UITS Research Technologies | The `getting-help-from-research-technologies` skill in the research-technologies repository |
+| Clusters, storage systems, allocations | UITS Research Technologies | The [`getting-help-from-research-technologies`](https://github.com/IUSCA/research-technologies/tree/main/.agents/skills/getting-help-from-research-technologies) skill in the research-technologies repository |
 
 **Required.** "Immediately report" information security incidents, per IU
 incident reporting under IT-12. A possible PHI exposure goes to

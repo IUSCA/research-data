@@ -91,7 +91,7 @@ linking another source.
 
 ## What classification decides
 
-- **Where data may live.** The `iu-research-computing-map` skill in the
+- **Where data may live.** The [`iu-research-computing-map`](https://github.com/IUSCA/research-technologies/tree/main/.agents/skills/iu-research-computing-map) skill in the
   research-technologies repository lists each IU research system's approvals.
   KB0025747 lists Restricted as the most sensitive non-PHI classification for
   Quartz, Slate, Slate-Project, Slate-Scratch, the SDA, Geode-Project, and
@@ -136,7 +136,7 @@ that reads files is an AI tool. This applies to the agent reading this skill.
 data's classification before opening data files. With Restricted or Critical
 data, it should work from schemas, codebooks, and synthetic samples, unless
 the agent runs on an approved service such as REALLMS. The
-`using-reallms` skill in the research-technologies repository covers
+[`using-reallms`](https://github.com/IUSCA/research-technologies/tree/main/.agents/skills/using-reallms) skill in the research-technologies repository covers
 REALLMS.
 
 "Sensitive" is not a classification. KB0024963 says "The term 'sensitive' is
