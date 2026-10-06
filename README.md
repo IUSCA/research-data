@@ -104,6 +104,34 @@ The skills live in `.agents/skills/`. Codex, pi, and OpenCode read that
 directory. Claude Code reads only `.claude/skills/`, so `.claude/skills` is a
 committed symbolic link to it.
 
+### As a Claude plugin
+
+This repository is also a Claude plugin marketplace. Installing the plugin
+makes every skill available in all your projects, with no clone and no
+copying.
+
+In Claude Code:
+
+```text
+/plugin marketplace add IUSCA/research-data
+/plugin install research-data@iusca-research-data
+```
+
+Claude desktop can add the same marketplace, `IUSCA/research-data`, from its
+plugin settings.
+
+Plugin skills are namespaced, so `finding-iu-research-data` appears as
+`research-data:finding-iu-research-data`. The agent still picks a skill from
+its description, so you rarely type the name.
+
+To update, run `/plugin marketplace update iusca-research-data`.
+
+The plugin reads the skills from `.agents/skills/`, the directory the other
+harnesses use, so no skill is duplicated. The manifests are
+`.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`.
+
+### In another project
+
 To use the skills in another project, copy the skill directories you need
 into that project's `.agents/skills/`. Or use the
 [`skills` CLI](https://github.com/vercel-labs/skills):
@@ -113,8 +141,9 @@ npx skills add <this repository> --list
 npx skills add <this repository> --skill finding-iu-research-data --copy
 ```
 
-Claude Code users can also run `claude --add-dir ~/repos/research-data` for
-one session.
+Claude Code and Claude desktop users can install the
+[plugin](#as-a-claude-plugin). For one session only, run
+`claude --add-dir ~/repos/research-data`.
 
 ## Maintaining
 
