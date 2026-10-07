@@ -117,9 +117,6 @@ In Claude Code:
 /plugin install research-data@iusca-research-data
 ```
 
-Claude desktop can add the same marketplace, `IUSCA/research-data`, from its
-plugin settings.
-
 Plugin skills are namespaced, so `finding-iu-research-data` appears as
 `research-data:finding-iu-research-data`. The agent still picks a skill from
 its description, so you rarely type the name.
@@ -141,7 +138,7 @@ npx skills add <this repository> --list
 npx skills add <this repository> --skill finding-iu-research-data --copy
 ```
 
-Claude Code and Claude desktop users can install the
+Claude Code users can install the
 [plugin](#as-a-claude-plugin). For one session only, run
 `claude --add-dir ~/repos/research-data`.
 
