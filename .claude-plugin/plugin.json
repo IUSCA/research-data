@@ -1,0 +1,19 @@
+{
+  "name": "research-data",
+  "description": "Skills for research data at IU: find data IU already has, classify it, plan management and sharing, and stay within IU policy and sponsor rules.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Indiana University Research Technologies",
+    "url": "https://github.com/IUSCA"
+  },
+  "homepage": "https://github.com/IUSCA/research-data",
+  "repository": "https://github.com/IUSCA/research-data",
+  "license": "ECL-2.0",
+  "keywords": [
+    "indiana-university",
+    "research-data",
+    "data-management",
+    "data-sharing"
+  ],
+  "skills": "./.agents/skills"
+}
