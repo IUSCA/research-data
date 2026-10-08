@@ -1,0 +1,66 @@
+{
+  "KB0022442": {
+    "title": "About institutional data at IU",
+    "version": "3.0",
+    "published": "2025-10-06",
+    "updated": "2025-11-14",
+    "sha256": "6cde5afbf87f57c8ca24b762927bac9cb6615c243d15c05d4ef3ce4eee6e979d",
+    "taken": "2026-10-07"
+  },
+  "KB0023515": {
+    "title": "UITS Research Technologies systems and services for researchers working with data containing HIPAA-regulated PHI",
+    "version": "4.0",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "sha256": "7830b8751a1faed544e45c242fb8a8423dd1e498120992721516acdc5a12e7d2",
+    "taken": "2026-10-07"
+  },
+  "KB0023532": {
+    "title": "About protected health information (PHI) data elements in the classifications of institutional data",
+    "version": "2.0",
+    "published": "2024-09-26",
+    "updated": "2025-11-14",
+    "sha256": "93554c30d46d6714c81d9d2fd2d40de10f7036e28b527dc5c74ee17f36bd398e",
+    "taken": "2026-10-07"
+  },
+  "KB0023604": {
+    "title": "About dedicated file storage services and IT services with storage components appropriate for sensitive institutional data, including research data containing protected health information",
+    "version": "13.0",
+    "published": "2026-10-01",
+    "updated": "2026-10-01",
+    "sha256": "e2559e18cbd360a1de4f574484cc4104f608e6166eb464c046e416f9b7f0efe8",
+    "taken": "2026-10-07"
+  },
+  "KB0024963": {
+    "title": "About sensitive data at IU",
+    "version": "1.0",
+    "published": "2024-09-16",
+    "updated": "2025-11-14",
+    "sha256": "6f351300e6787ae7e3fd7e7e7d47d372696153db026b234b0c670b23096da76e",
+    "taken": "2026-10-07"
+  },
+  "KB0025747": {
+    "title": "Types of sensitive institutional data appropriate for UITS Research Technologies services",
+    "version": "6.0",
+    "published": "2026-10-02",
+    "updated": "2026-10-02",
+    "sha256": "aae2691195de8d6f2d7609b9cbedff3ac66184d30f7d3b2361d91299c1351f99",
+    "taken": "2026-10-07"
+  },
+  "KB0026817": {
+    "title": "Acceptable use of AI tools with IU research data",
+    "version": "11.0",
+    "published": "2026-09-23",
+    "updated": "2026-09-23",
+    "sha256": "41f2cd5864cc3babfd538ec9a39d35ce5a4a24a4ae49824aabfc2bfbc6fe50f8",
+    "taken": "2026-10-07"
+  },
+  "KB0027312": {
+    "title": "Researcher responsibilities for using AI tools with research data at IU",
+    "version": "2.0",
+    "published": "2026-04-09",
+    "updated": "2026-04-09",
+    "sha256": "80a1117d19a1b9afebdcd0378b8c7df5abfda35bb5df68e35f50ba2f1a4f7782",
+    "taken": "2026-10-07"
+  }
+}
