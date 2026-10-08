@@ -5,9 +5,10 @@ description: Request and use health and clinical research data at Indiana Univer
 
 # Accessing health and clinical data
 
-Verified 2026-10-04 against Regenstrief Data Services, Indiana CTSI, IU
-Research, IU Data Management, and Research Data Catalog pages. Sources are
-listed at the end.
+Verified 2026-10-08 (the MarketScan catalog entry only) against the
+Research Data Catalog. Other sources were verified 2026-10-04 against
+Regenstrief Data Services, Indiana CTSI, IU Research, IU Data Management,
+and Research Data Catalog pages. Sources are listed at the end.
 
 Patient-level data is the most tightly controlled data at IU. Settle three
 things before anything else: IRB status, who holds the identifiers, and where
@@ -82,15 +83,25 @@ HCUP databases. For NIS, NEDS, and NASS, the entries say:
 
 ## MarketScan
 
-Per the catalog entry, observed 2026-10-04:
+Per the catalog entry, observed 2026-10-08 (entry updated 2026-10-05):
 
+- Commercial, Medicare, Medicaid, Dental, and National Weights products for
+  2016 to 2024, with partial 2025 data.
 - IU faculty, research staff, and PhD students on existing faculty projects.
 - **Required.** "All analysis of the MarketScan data must be performed on
   UITS Research Technologies High Performance Computing Systems." This is
   the license term.
 - Free for existing and internally funded projects. Grant-funded use
-  "requires a fee to be written into the proposal budget."
+  "requires a fee to be written into the proposal budget before the grant
+  is submitted."
 - Documentation requires an NDA.
+- Access runs in steps: the documentation form and NDA, a short Canvas
+  course on the vendor's terms, a meeting with the Technical Data Custodian,
+  then a 45-day trial on a large sample. Full data follows a summary of the
+  proposed research and a workflow review. Plan for these steps before a
+  project depends on the data.
+- Data stays on UITS Research Technologies systems: Research Desktop,
+  Quartz, Slate, and Slate Scratch.
 
 The RDC posted a MarketScan Research Acceleration RFP on 2026-08-20. RDC staff
 draft an initial analysis for accepted proposals. Proposals were accepted on

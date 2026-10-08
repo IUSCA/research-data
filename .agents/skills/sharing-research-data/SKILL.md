@@ -77,8 +77,8 @@ mechanisms."
 | Registered or controlled | Domain controlled-access repositories, such as NIH repositories; ICPSR, which supports several access levels |
 | Secure enclave | Provider-required enclaves; at IU, RADaRS for data whose custodian controls ingress and egress |
 
-- IU publishes a generalist repository comparison matrix at
-  https://hdl.handle.net/1805/42712.
+- IU publishes a generalist repository comparison matrix in IU
+  ScholarWorks (handle 1805/42712): https://scholarworks.indianapolis.iu.edu/items/98dc740f-794f-4f56-a9d7-46f38a2cad88
 - NIH lists supported repositories for NIH-funded data. Use one when NIH
   expects it.
 
@@ -170,7 +170,7 @@ Checked 2026-10-04.
   https://research.iu.edu/policies/human-subjects-irb/research-data-management.html
 - UA-23: https://policies.iu.edu/policies/ua-23-intellectual-property-copyrightable-works/index.html
 - RADaRS: https://researchdata.iu.edu/resource-catalog/radars/
-- Generalist repository comparison matrix: https://hdl.handle.net/1805/42712
+- Generalist repository comparison matrix (handle 1805/42712): https://scholarworks.indianapolis.iu.edu/items/98dc740f-794f-4f56-a9d7-46f38a2cad88
 - Research Security Office, export control:
   https://rso.iu.edu/export-control/contact-export-control.html
 - External: University of Michigan SPG 303.06 and Duke Research Policy
