@@ -32,7 +32,10 @@ internal_hosts = '[\w.-]*bioloop[\w.-]*\.iu\.edu|[\w.-]+\.sca\.iu\.edu'
 user_agent = "research-data-skills"
 # These hosts answer scripted requests with 403.
 skip_403_hosts = ["spg.umich.edu", "www.regenstrief.org", "osome.iu.edu"]
-skip_urls = []
+# Resolves from IU and home networks, but neither hdl.handle.net nor IU
+# ScholarWorks answers GitHub's hosted runners (URLError on every retry,
+# 2026-10-08). Check it by hand: it should land on the ScholarWorks item.
+skip_urls = ["https://hdl.handle.net/1805/42712"]
 
 [freshness]
 # Run each Monday by .github/workflows/freshness.yml.
