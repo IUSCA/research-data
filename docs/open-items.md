@@ -28,7 +28,8 @@ update the skill that names it and delete the item here.
 ## SecureMyResearch and UISO (securemyresearch@iu.edu)
 
 8. Which IU systems are designated NIST SP 800-171-compliant for NIH
-   controlled-access data? Which KB article replaced KB0026806?
+   controlled-access data? KB0026806 is not visible without logging in.
+   Is there a public page researchers can read instead?
    (`navigating-research-data-policy`)
 9. The Data Storage Finder allows Critical data on the SDA, home directory,
    Geode-Project, and Slate. KB0025747 and KB0023515 allow at most Restricted
