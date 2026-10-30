@@ -152,7 +152,7 @@ Claude Code users can install the
   the office that can answer it.
 - `tools/check-skills.py` runs the offline checks: format, markers, sources,
   age, and what stays out. `--kb` and `--links` add the network checks, and
-  `--freshness` runs every check this repository's weekly workflow runs.
+  `--freshness` runs every check this repository's monthly workflow runs.
   `tools/check-skills.toml` holds this repository's settings.
 - The catalog helper,
   `.agents/skills/finding-iu-research-data/scripts/rdc_catalog.py check`,

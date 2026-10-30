@@ -111,8 +111,9 @@ retention, disposal, or archiving; see the policy map.
   NIST SP 800-171. IU states that its administrators ensure "designated
   systems" meet the requirements.
 - **Open item.** IU does not publicly name its designated systems. The KB
-  article IU links for instructions, KB0026806, could not be found. Ask
-  securemyresearch@iu.edu before requesting controlled-access data.
+  article IU links for instructions, KB0026806, is not visible without
+  logging in. Ask securemyresearch@iu.edu before requesting
+  controlled-access data.
 - NIH's draft Controlled-Access Data Policy (NOT-OD-26-023) is proposed, not
   in force. It would require controlled access for more kinds of data, such
   as precise geolocation, biometrics, and face or head imaging. Its comment
@@ -166,7 +167,7 @@ Checked 2026-10-04.
 - RDC service unit announcement:
   https://researchdata.iu.edu/news-events/posts/2025-08-29-research-data-commons-established-as-service-center/
 - KB0026806, linked from the IU NIH GDS update page; not found by KB search
-  on 2026-10-04
+  without logging in on 2026-10-04 and 2026-10-09
 - [KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817), Acceptable use of AI tools with IU research data
 - External: 2 CFR 200.334,
   https://www.ecfr.gov/current/title-2/subtitle-A/chapter-II/part-200/subpart-D/subject-group-ECFR4e2c2f81ba45d3c/section-200.334
