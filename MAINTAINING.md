@@ -26,7 +26,7 @@ covers how to write and verify a single claim.
 | An open issue labeled `freshness` | [Working a freshness issue](#working-a-freshness-issue) |
 
 GitHub Actions runs `tools/check-skills.py` on every pull request and push to
-`main`. Every Monday, `freshness.yml` runs `tools/check-skills.py
+`main`. On the 1st of each month, `freshness.yml` runs `tools/check-skills.py
 --freshness`. Here that means the KB check, the link check, and the catalog
 check. When any finds a change, it opens an issue labeled `freshness`, or
 comments on the one already open.
