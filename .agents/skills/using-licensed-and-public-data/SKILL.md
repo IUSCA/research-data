@@ -12,6 +12,25 @@ A license decides who may use data, where, and for what. Read the license or
 the catalog entry before anything else. The license often names a campus and
 an eligible role.
 
+## When to ask a person
+
+These questions need a person. Contacts are from
+`getting-help-with-research-data` and the sections below.
+
+| Situation | Ask | Send |
+| --- | --- | --- |
+| Whether a license covers your campus, role, collaborators, or derived data | The catalog entry's Public Contact; for library licenses, resdata@iu.edu | The dataset, your role and campus, and the planned use |
+| Buying data, or signing a license or DUA | The RDC, iurdc@iu.edu, first; then your unit's financial manager and ORA or IU Purchasing | The dataset, the supplier, the cost, and the planned use |
+| Restricted federal data, RADaRS, or ICPSR | Social Science Research Commons, ssrc@iu.edu | The dataset, the provider's terms, and the project |
+| Social media data with personal identifiers | Human Research Protection Program, irb@iu.edu | The archive, the data elements, and the study design |
+
+**Recommended.** In these cases, say plainly that the question needs a
+person. Name the office and what to send. Do not offer a best guess as the
+answer. Only the office can decide, and a guess can lead a researcher to
+break an agreement or a rule.
+
+For any other question, see `getting-help-with-research-data`.
+
 ## Licensed data by provider
 
 | Provider | What | Who and where |
