@@ -12,6 +12,24 @@ end.
 Classify before storing, sharing, or computing. Every other decision about
 research data depends on the classification.
 
+## When to ask a person
+
+These questions need an IU office. Contacts are from
+`getting-help-with-research-data` and the sections below.
+
+| Situation | Ask | Send |
+| --- | --- | --- |
+| A topic in step 3 that "may be" Critical, such as FERPA, GDPR, export control, or CUI | The office in step 3's table; for export control, the Research Security Office, rsohelp@iu.edu | The data elements, their source, and every agreement on them |
+| An unclear or edge-case classification | Data Steward for Research Data, datard@iu.edu | The data elements, why the level is unclear, and the planned use |
+| Restricted or Critical data with an AI tool not approved for it | Data Steward for Research Data, datard@iu.edu | The PI, IRB protocol, sponsor, workflow, and tools (KB0026817) |
+
+**Recommended.** In these cases, say plainly that the question needs a
+person. Name the office and what to send. Do not offer a best guess as the
+answer. Only the office can decide, and a guess can lead a researcher to
+break an agreement or a rule.
+
+For any other question, see `getting-help-with-research-data`.
+
 ## Research data is institutional data
 
 **Required.** Under DM-01, institutional data includes "clinical data or
