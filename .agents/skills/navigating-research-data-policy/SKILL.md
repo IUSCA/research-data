@@ -1,6 +1,6 @@
 ---
 name: navigating-research-data-policy
-description: Navigate the rules for research data at Indiana University, which has no single research data policy. Separates what is required (DM-01, DM-02, UA-23, UA-24, HRPP policy, 2 CFR 200, NIH and NSF terms, NIH controlled-access security) from recommended practice, covering ownership, PI and team responsibilities, retention, disposal, departing researchers, NIH genomic and controlled-access data, and where policy is silent. Use when someone asks who owns research data, what a PI must do, how long data must be kept, whether something is required or only advised, or what to do where IU policy says nothing.
+description: Navigate the rules for research data at Indiana University, which has no single research data policy. Separates what is required (DM-01, DM-02, UA-23, UA-24, HRPP policy, 2 CFR 200, NIH and NSF terms, NIH controlled-access security) from recommended practice, covering ownership, PI and team responsibilities, retention, disposal, departing researchers, NIH genomic and controlled-access data, and where policy is silent. Use when someone asks who owns research data, whether it belongs to them or to IU, what a PI must do, how long data must be kept or when it may be deleted, whether something is a rule or only advice, or what to do where IU policy says nothing.
 ---
 
 # Navigating research data policy
