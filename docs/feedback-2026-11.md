@@ -14,9 +14,11 @@ Proposed:
 
 - Add a short "Feedback" section to the README: open an issue or send a pull request.
 - Copy the "Skill feedback" issue form from research-technologies.
-- **Family.** Generalize `reporting-a-skill-problem` so each repository carries it with its own repository name, rather than only research-technologies.
+- **Family.** Generalize `reporting-a-skill-problem` so it works for a skill from any family repository.
 
 Decided, 2026-11-02: GitHub issues and pull requests are the primary route for feedback and changes. The README and CONTRIBUTING.md list no personal contact, because maintenance will pass to others and requests should not depend on one person. The "Skill feedback" issue form is adapted to this repository's skills. Its config sends questions about data itself to the Research Data Commons contact page, so the issue tracker is not taken for a help desk.
+
+Decided, 2026-11-02: shared pieces live once, in a new parent repository, `iu-research`, rather than as a copy in each repository. It holds the generalized `reporting-a-skill-problem` skill, the family conventions, the canonical checker, and a marketplace that installs all five plugins. Each repository keeps its own issue form, because GitHub issue forms work only in their own repository.
 
 ## 2. How many skills is the right number?
 
