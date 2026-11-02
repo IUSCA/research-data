@@ -24,6 +24,26 @@ rules bind, and recommends practice where none does.
 Answer the question asked, then say which kind of answer it is. Never present
 a recommendation as an IU rule.
 
+## When to ask a person
+
+These questions need an IU office. Contacts are from
+`getting-help-with-research-data` and the sections below.
+
+| Situation | Ask | Send |
+| --- | --- | --- |
+| An open item, or a question under "Where policy is silent" | Research Data Commons, iurdc@iu.edu, which routes questions | The question, the project, and the agreements on the data |
+| Ownership set by an agreement, or signing one | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The agreement and the data it covers |
+| IRB approval or human subjects data rules | Human Research Protection Program, irb@iu.edu | The IRB protocol number and the question |
+| Requesting NIH controlled-access data | SecureMyResearch, securemyresearch@iu.edu | The repository, the data, and the planned system, before the request |
+| A suspected exposure of sensitive data | IU incident reporting, https://informationsecurity.iu.edu/report-incident/; for PHI, it-incident@iu.edu | What may have been exposed, where, and when |
+
+**Recommended.** In these cases, say plainly that the question needs a
+person. Name the office and what to send. Do not offer a best guess as the
+answer. Only the office can decide, and a guess can lead a researcher to
+break an agreement or a rule.
+
+For any other question, see `getting-help-with-research-data`.
+
 ## Status of an IU research data policy
 
 The RDC announced in August 2025 that it had "received approval to support a
