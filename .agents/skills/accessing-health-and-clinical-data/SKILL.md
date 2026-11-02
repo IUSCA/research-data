@@ -14,6 +14,26 @@ Patient-level data is the most tightly controlled data at IU. Settle three
 things before anything else: IRB status, who holds the identifiers, and where
 the analysis may run.
 
+## When to ask a person
+
+These questions need an IU office or a data provider. Contacts are from
+`getting-help-with-research-data` and the sections below.
+
+| Situation | Ask | Send |
+| --- | --- | --- |
+| INPC, IU Health, or Eskenazi data, including which RDS form to use | Regenstrief Data Services, askrds@regenstrief.org | The cohort criteria; for extraction, the IRB approval and award |
+| IRB approval or a HIPAA authorization | Human Research Protection Program, irb@iu.edu | The IRB protocol number or draft, and the data sources |
+| Whether data holds PHI, or what HIPAA requires of you | HIPAA Privacy Officer, hipaa@iu.edu | The data elements and where they will be stored |
+| Signing a data agreement | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The agreement, the data, and the IRB protocol |
+| HCUP access | Social Science Research Commons, ssrc@iu.edu | The database, your role and campus, and your deadline |
+
+**Recommended.** In these cases, say plainly that the question needs a
+person. Name the office and what to send. Do not offer a best guess as the
+answer. Only the office can decide, and a guess can lead a researcher to
+break an agreement or a rule.
+
+For any other question, see `getting-help-with-research-data`.
+
 ## Choose the source
 
 | Need | Source | Identifiable? | Typical burden |
