@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: A question about IU research data
+    url: https://researchdata.iu.edu/about/contact/
+    about: Ask the Research Data Commons about finding, getting, or using data at IU. Issues here are for the skills, not a help desk.
