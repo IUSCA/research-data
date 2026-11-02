@@ -1,6 +1,6 @@
 ---
 name: getting-help-with-research-data
-description: Find the right Indiana University office for a research data question, and know what to send. Covers the Research Data Commons, IU Libraries and campus data librarians, the Office for Research Administration, the Human Research Protection Program, the Data Steward for Research Data, SecureMyResearch, University Data Management Council, HIPAA Privacy, export control, the Innovation and Commercialization Office, Regenstrief Data Services, and the SSRC. Use when someone does not know whom to ask about finding, licensing, classifying, storing, sharing, or keeping research data.
+description: Find the right Indiana University office for a research data question, and know what to send. Covers the Research Data Commons, IU Libraries and campus data librarians, the Office for Research Administration, the Human Research Protection Program, the Data Steward for Research Data, SecureMyResearch, University Data Management Council, HIPAA Privacy, export control, the Innovation and Commercialization Office, Regenstrief Data Services, and the SSRC. Use when someone does not know whom to ask about finding, licensing, classifying, storing, sharing, or keeping research data, or who at IU can help with their study's data. For support with IU computing or storage systems, accounts, or logins, use getting-help-from-research-technologies in research-technologies instead.
 ---
 
 # Getting help with research data
