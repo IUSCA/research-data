@@ -10,6 +10,26 @@ Verified 2026-10-04 against the IU pages named in Sources.
 Send each question to the office that decides it. The RDC is the general
 front door. It routes questions it cannot answer.
 
+## When to ask a person
+
+**Recommended.** Stop and refer the researcher to an office when any of
+these holds:
+
+- The answer is a decision only IU can make: signing an agreement, IRB or
+  HIPAA review, an edge-case classification, export control, or an AI tool
+  exception.
+- Restricted or Critical data would go into an AI tool not approved for it.
+- The answer depends on an open item in a skill.
+- A deadline depends on the answer, so the office needs time to reply.
+- Data may have been exposed. Report it as the note after the table says.
+
+Then say plainly that the question needs a person. Name the office from the
+table below, and what to send. Do not offer a best guess as the answer. Only
+the office can decide, and a guess can lead a researcher to break an
+agreement or a rule.
+
+When no row fits, ask the RDC at iurdc@iu.edu.
+
 ## Who decides what
 
 | Question | Ask | Contact |
