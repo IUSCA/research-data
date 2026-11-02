@@ -32,7 +32,7 @@ update the skill that names it and delete the item here.
    Is there a public page researchers can read instead?
    (`navigating-research-data-policy`)
 
-## Data Storage Finder maintainers (contact link on the Finder page)
+## Data Storage Finder maintainers (engagert@iu.edu)
 
 9. A correction request, not a question of which source is current. The
    Finder's "Critical" answer, and its table, allow Critical data on the

@@ -18,7 +18,7 @@ stale_after_days = 120
 # Shared office and service addresses that may appear. Add one only after
 # checking it is a role address on an official page, not a person's.
 allowed_emails = [
-  "askrds@regenstrief.org", "datard@iu.edu", "dataserv@iu.edu",
+  "askrds@regenstrief.org", "datard@iu.edu", "engagert@iu.edu", "dataserv@iu.edu",
   "datastu@iu.edu", "export@iu.edu", "gdpr@iu.edu", "hipaa@iu.edu",
   "irb@iu.edu", "it-incident@iu.edu", "iudata@iu.edu", "iurdc@iu.edu",
   "kb@iu.edu", "resdata@iu.edu", "rsohelp@iu.edu",
