@@ -1,6 +1,6 @@
 ---
 name: classifying-research-data
-description: Classify research data under Indiana University policy DM-01 as Public, University-internal, Restricted, or Critical, using the IU Data Classification Matrix and the IU steps for research data, and say what each level allows for storage, sharing, and third parties. Covers PHI, PII of research participants, data under a data use agreement, social media data, export control, FERPA, GDPR, CUI, and who decides edge cases. Use when someone asks how sensitive their data is, whether it may go on a system or service, or what a classification requires before sharing.
+description: Classify research data under Indiana University policy DM-01 as Public, University-internal, Restricted, or Critical, using the IU Data Classification Matrix and the IU steps for research data, and say what each level allows for storage, sharing, and third parties. Covers PHI, PII of research participants, data under a data use agreement, social media data, export control, FERPA, GDPR, CUI, and who decides edge cases. Use when someone asks how sensitive their data is, how careful to be with identifiable participant data such as names, health details, or recordings, whether it may go on a system, service, or AI tool, or what a classification requires before sharing. It decides what may go where; choosing and using an IU storage or computing system is covered in research-technologies.
 ---
 
 # Classifying research data
