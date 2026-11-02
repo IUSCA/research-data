@@ -142,6 +142,21 @@ Claude Code users can install the
 [plugin](#as-a-claude-plugin). For one session only, run
 `claude --add-dir ~/repos/research-data`.
 
+## Feedback and changes
+
+Issues and pull requests are how this repository takes changes.
+
+- To report a wrong, outdated, or missing claim,
+  [open an issue](https://github.com/IUSCA/research-data/issues/new/choose)
+  with the "Skill feedback" form.
+- To fix it yourself, send a pull request. [CONTRIBUTING.md](CONTRIBUTING.md)
+  explains how to verify a claim.
+- Your agent can draft the issue for you. Read it before you submit it, and
+  leave out data values, identifiers, and non-public names.
+
+Issues are for the skills, not for questions about data. Send those to the
+office that decides them; `getting-help-with-research-data` lists each one.
+
 ## Maintaining
 
 - [CONTRIBUTING.md](CONTRIBUTING.md) explains how to verify and write a
