@@ -12,6 +12,24 @@ Start with the Research Data Catalog, then confirm the entry live before
 advising anyone. Access terms, eligibility, and contacts change. A copy in
 this skill is a lead, not an answer.
 
+## When to ask a person
+
+These questions need a person. Contacts are from
+`getting-help-with-research-data` and the sections below.
+
+| Situation | Ask | Send |
+| --- | --- | --- |
+| Eligibility, access steps, or timing for a catalog dataset | The entry's Public Contact | The entry, your role and campus, and your deadline |
+| Whether IU already has data, before buying, or a catalog addition | Research Data Commons, iurdc@iu.edu | The dataset or supplier, and the intended use |
+| Secondary data the catalog lacks | IU Libraries Research Data Services, resdata@iu.edu; at IU Indianapolis, dataserv@iu.edu | The research question and where you have searched |
+
+**Recommended.** In these cases, say plainly that the question needs a
+person. Name the office and what to send. Do not offer a best guess as the
+answer. Only the office can decide, and a guess can lead a researcher to
+break an agreement or a rule.
+
+For any other question, see `getting-help-with-research-data`.
+
 ## Where IU lists its data
 
 - **Research Data Catalog**, https://researchdatacatalog.iu.edu, lists
