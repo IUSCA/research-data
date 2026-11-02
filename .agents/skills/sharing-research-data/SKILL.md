@@ -1,6 +1,6 @@
 ---
 name: sharing-research-data
-description: Share Indiana University research data with collaborators, repositories, or the public, and move data when a researcher joins or leaves IU. Covers who signs data use, sharing, and transfer agreements, the DM-02 and third-party assessment requirements, deciding between open and controlled access, choosing a repository, external collaborators and affiliate accounts, and international collaborators. Use when someone wants to send, publish, deposit, or give access to research data, receive data under an agreement, or take data with them to another institution.
+description: Share Indiana University research data with collaborators, repositories, or the public, and move data when a researcher joins or leaves IU. Covers who signs data use, sharing, and transfer agreements, the DM-02 and third-party assessment requirements, deciding between open and controlled access, choosing a repository, external collaborators and affiliate accounts, and international collaborators. Covers the agreements and approvals, not the transfer tools or storage. Use when someone wants to send, publish, deposit, or give access to research data, such as a copy for a researcher at another university, receive data under an agreement, or take data with them when they leave for another institution.
 ---
 
 # Sharing research data
