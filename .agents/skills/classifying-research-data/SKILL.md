@@ -5,9 +5,10 @@ description: Classify research data under Indiana University policy DM-01 as Pub
 
 # Classifying research data
 
-Verified 2026-10-04 against IU policies DM-01 and DM-02, the IU Data
-Management site, and the IU Knowledge Base (KB). Sources are listed at the
-end.
+Verified 2026-11-02 (the Data Storage Finder only; KB articles read that
+day are recorded in `tools/kb-snapshot.json`). Other sources were verified
+2026-10-04 against IU policies DM-01 and DM-02, the IU Data Management
+site, and the IU Knowledge Base (KB). Sources are listed at the end.
 
 Classify before storing, sharing, or computing. Every other decision about
 research data depends on the classification.
@@ -148,10 +149,45 @@ policy."
 - Re-read the matrix CSV at https://datamanagement.iu.edu/docs/matrix.csv
   each review. Compare its Research Data and Health rows with the tables
   above.
-- **Open item.** The Data Storage Finder lists the SDA, home directory,
-  Geode-Project, and Slate as allowing Critical data. KB0025747 and
-  KB0023515 allow at most Restricted on these, other than PHI. The KB is
-  newer and more specific. Ask securemyresearch@iu.edu which is current.
+- **Critical data on Research Technologies storage.** The KB treats PHI
+  apart from other Critical data. KB0023515 lists the SDA, Slate,
+  Slate-Project, Slate-Scratch, Geode home directories, Geode-Project, and
+  ResDB as appropriate for PHI, with added safeguards. It also says "other types of
+  institutional data classified as Critical are not permitted on Research
+  Technologies systems." KB0024406, KB0022478, and KB0022767 repeat that
+  sentence. KB0025747 and KB0023604 list Restricted as the most sensitive
+  non-PHI classification for each of these systems. KB0023532 says which
+  Critical data elements count as PHI.
+- **Observed 2026-11-02.** The Data Storage Finder offers the SDA, Home
+  Directory, Geode Project, Slate, Slate-Scratch, Slate-Project, ResDB, and
+  Scholarly Data Share (SDS) for the answer "Critical." That is question 3
+  in https://datastoragefinder.iu.edu/dsf/config.js. Its comparison table,
+  at https://datastoragefinder.iu.edu/dsf/, lists "Critical" for each. Only
+  the ResDB and SDS rows add "(ePHI)."
+- So the Finder and the KB agree for PHI. They differ for other Critical
+  data, which the Finder's question does not separate from PHI. Follow the
+  KB article for the specific service. README's source ranking puts both in
+  IU guidance, so it does not order them. The KB articles are each
+  service's own statement, the Finder links each row to them, and six
+  articles agree. Other Critical data belongs where KB0023604 allows
+  Critical other than PHI, such as paid Google Shared Drives or Microsoft at
+  IU Secure Storage.
+- The Finder's Google Shared Drives and Microsoft Teams rows allow Critical.
+  KB0023604 agrees for paid Google Shared Drives and Microsoft at IU Secure
+  Storage. Every Microsoft team is created through the Secure Storage
+  request form (KB0026269). Teams chat allows at most Restricted
+  (KB0023604).
+- **Observed 2026-11-02.** The Finder's question logic offers Google Drive
+  for Restricted data, but its table says "Public." KB0023604 allows
+  University-internal and "some Restricted" on Google at IU My Drive, and
+  no PHI. Follow KB0023604.
+- **Recommended.** No KB article gives a classification for SDS. Its data
+  lives on the SDA (KB0025720), so treat it like the SDA. That keeps SDS
+  within the most specific guidance that exists.
+- **Open item.** The Finder's "Critical" answer and its table rows for
+  Research Technologies storage do not separate PHI from other Critical
+  data, against KB0023515 and KB0025747. This is a correction for the
+  Finder's maintainers, through the contact link on the Finder page.
 - **Open item.** The FAQ names export@iu.edu for export control. The Research
   Security Office page names rsohelp@iu.edu.
 - **Open item.** The DSH tool's Research Data section needs an IU login. A
@@ -159,18 +195,24 @@ policy."
 
 ## Sources
 
-Checked 2026-10-04.
+Checked 2026-10-04, except as noted.
 
 - DM-01: https://policies.iu.edu/policies/dm-01-management-institutional-data/index.html
 - DM-02: https://policies.iu.edu/policies/dm-02-disclosing-institutional-information/index.html
 - IU Data Classification Matrix: https://datamanagement.iu.edu/tools/matrix.html
 - FAQ, "How do I determine the classification of research data?":
   https://datamanagement.iu.edu/faq/research-classification.html
-- Data Storage Finder: https://datastoragefinder.iu.edu/dsf/
+- Data Storage Finder, read 2026-11-02: https://datastoragefinder.iu.edu/dsf/
+  and its question logic, https://datastoragefinder.iu.edu/dsf/config.js
 - [KB0022442](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0022442), About institutional data at IU
 - [KB0024963](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024963), About sensitive data at IU
 - [KB0025747](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025747), Sensitive institutional data appropriate for RT services
 - [KB0023515](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023515), RT systems for HIPAA-regulated PHI
+- [KB0024406](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024406), About the Scholarly Data Archive (SDA)
+- [KB0022478](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0022478), Secure PHI on high performance file systems
+- [KB0022767](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0022767), About the Research Databases (ResDB) service
+- [KB0025720](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025720), About the Scholarly Data Share (SDS) service
+- [KB0026269](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026269), About Microsoft Teams at IU
 - [KB0023604](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023604), Dedicated file storage for sensitive data
 - [KB0023532](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023532), PHI data elements in the classifications
 - [KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817), Acceptable use of AI tools with IU research data

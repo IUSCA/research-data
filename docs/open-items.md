@@ -31,9 +31,18 @@ update the skill that names it and delete the item here.
    controlled-access data? KB0026806 is not visible without logging in.
    Is there a public page researchers can read instead?
    (`navigating-research-data-policy`)
-9. The Data Storage Finder allows Critical data on the SDA, home directory,
-   Geode-Project, and Slate. KB0025747 and KB0023515 allow at most Restricted
-   there, other than PHI. Which is current? (`classifying-research-data`)
+
+## Data Storage Finder maintainers (contact link on the Finder page)
+
+9. A correction request, not a question of which source is current. The
+   Finder's "Critical" answer, and its table, allow Critical data on the
+   SDA, Home Directory, Geode Project, Slate, Slate-Scratch, Slate-Project,
+   ResDB, and Scholarly Data Share. KB0023515, KB0024406, KB0022478, and
+   KB0022767 allow PHI there but no other Critical data; KB0025747 and
+   KB0023604 list Restricted as the limit other than PHI. The Finder also
+   offers Google Drive for Restricted data while its table says "Public"
+   (KB0023604: University-internal and some Restricted). Observed
+   2026-11-02. (`classifying-research-data`)
 
 ## University Data Management Council and Data Stewards (iudata@iu.edu, datard@iu.edu)
 
