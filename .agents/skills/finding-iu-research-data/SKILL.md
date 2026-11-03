@@ -1,6 +1,6 @@
 ---
 name: finding-iu-research-data
-description: Find research data that Indiana University already has or can get, using the IU Research Data Commons (RDC) Research Data Catalog as the source of truth. Covers matching a research question to datasets such as INPC, HCUP, MarketScan, All of Us, Human Connectome Project, OSoMe social media archives, WRDS, CoreLogic, Web of Science, and library-licensed data, and checking eligibility and campus. Use when someone asks what data IU has on a topic, whether IU already licenses a dataset, or where to start getting data for a project.
+description: Find research data that Indiana University already has or can get, using the IU Research Data Commons (RDC) Research Data Catalog as the source of truth. Covers matching a research question to datasets such as INPC, HCUP, MarketScan, All of Us, Human Connectome Project, OSoMe social media archives, WRDS, CoreLogic, Web of Science, and library-licensed data, and checking eligibility and campus. Use when someone asks what data IU has on a topic, whether IU already has or licenses a dataset before they buy or collect their own, or where to start looking for existing data for a project.
 ---
 
 # Finding IU research data

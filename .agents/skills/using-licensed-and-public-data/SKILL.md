@@ -1,6 +1,6 @@
 ---
 name: using-licensed-and-public-data
-description: Use licensed, consortium, and public research data at Indiana University, including IU Libraries databases, Kelley School datasets (WRDS, NielsenIQ, CoreLogic), ICPSR, the Linguistic Data Consortium, HathiTrust Research Center, Web of Science XML, OSoMe social media archives, restricted federal data through RADaRS or the Indiana Federal Statistical Research Data Center, and how to buy a dataset IU does not have. Use when someone wants non-clinical secondary data, asks whether a license covers their use, or needs to purchase or license data.
+description: Use licensed, consortium, and public research data at Indiana University, including IU Libraries databases, Kelley School datasets (WRDS, NielsenIQ, CoreLogic), ICPSR, the Linguistic Data Consortium, HathiTrust Research Center, Web of Science XML, OSoMe social media archives, restricted federal data through RADaRS or the Indiana Federal Statistical Research Data Center, and how to buy a dataset IU does not have. Use when someone wants social media posts or other non-clinical secondary data, such as library databases or financial, economic, or survey data, asks whether a license covers their use, or needs to purchase or license data.
 ---
 
 # Using licensed and public data

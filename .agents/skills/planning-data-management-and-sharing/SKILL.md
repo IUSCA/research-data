@@ -1,6 +1,6 @@
 ---
 name: planning-data-management-and-sharing
-description: Plan research data management and sharing at Indiana University, including NIH Data Management and Sharing (DMS) plans in the 2026 format, NSF data management and sharing plans under PAPPG 24-1 Supplement 2, federal public access rules, retention periods, budgeting for sharing, and IU's free plan consultations. Use when someone is writing a data management plan for a proposal, budgeting for data sharing, deciding how long to keep data, or setting up data practices at the start of a project.
+description: Plan research data management and sharing at Indiana University, including NIH Data Management and Sharing (DMS) plans in the 2026 format, NSF data management and sharing plans under PAPPG 24-1 Supplement 2, federal public access rules, retention periods, budgeting for sharing, and IU's free plan consultations. Use when a funder requires a data management plan or says the data must be shared, when someone is writing a data management plan for a proposal or grant application, budgeting for data sharing, deciding how long to keep data, or setting up data practices at the start of a project.
 ---
 
 # Planning data management and sharing

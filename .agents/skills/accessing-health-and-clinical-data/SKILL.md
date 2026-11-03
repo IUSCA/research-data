@@ -1,6 +1,6 @@
 ---
 name: accessing-health-and-clinical-data
-description: Request and use health and clinical research data at Indiana University, including the Indiana Network for Patient Care (INPC), IU Health and Eskenazi records through Regenstrief Data Services, HCUP, MarketScan claims, All of Us, the Human Connectome Project, and biospecimen data from BC2 and the Komen Tissue Bank. Covers feasibility counts, honest-broker extraction, IRB and HIPAA requirements, data use agreements, and where the data must be analyzed. Use when someone needs EHR, claims, hospital discharge, or patient-level data for research at IU.
+description: Request and use health and clinical research data at Indiana University, including the Indiana Network for Patient Care (INPC), IU Health and Eskenazi records through Regenstrief Data Services, HCUP, MarketScan claims, All of Us, the Human Connectome Project, and biospecimen data from BC2 and the Komen Tissue Bank. Covers feasibility counts, honest-broker extraction, IRB and HIPAA requirements, data use agreements, and where the data must be analyzed. Use when someone needs patient or medical records (EHR), insurance claims, hospital discharge, or other patient-level data for a study at IU.
 ---
 
 # Accessing health and clinical data
