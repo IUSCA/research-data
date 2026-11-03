@@ -11,7 +11,7 @@ Duke's Research Policy Manual chapter 5 are examples.
 | Ownership | IU Data Management governance (Board of Trustees); UA-23; UA-24; HRPP policy for human subjects | Data Management FAQ on classifying research data | No general statement for research outside human subjects; agreements override |
 | Classification | DM-01, DM-01-S; the Data Classification Matrix sets research data to Restricted by default | FAQ steps; DSH tool | Covered |
 | Access rights | DM-01-S, in part | Account and access procedures | Who beyond the project may access research data, and disputes within a team |
-| Storage and handling | DM-01-S; KB service approvals; IT-12 | IU Guidance for the Management of Research Data (2019); Data Storage Finder | Guidance is dated; Storage Finder and KB disagree on Critical data |
+| Storage and handling | DM-01-S; KB service approvals; IT-12 | IU Guidance for the Management of Research Data (2019); Data Storage Finder | Guidance is dated; Storage Finder allows Critical data on Research Technologies storage, where the KB allows only PHI; follow the service's KB article |
 | Retention | 2 CFR 200.334 for federal awards; HRPP policy for human subjects; UA-18 for university records; sponsor terms | 2019 guidance: 5 years | No general minimum for research data |
 | Disposal | Agreements and sponsor terms | None specific to research data | No procedure |
 | Archiving and preservation | None | 2019 guidance; IU Libraries | No policy |
