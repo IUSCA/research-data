@@ -12,10 +12,11 @@ check. Each entry's JSON is open, so `show` and `check` read entries by id.
 The home page listing, newest first, loads from a script (Observed
 2026-11-03), so `new` reads entry ids from it.
 
-`check` pauses between requests and retries timeouts. It exits 1 when any
-entry changed, disappeared, or could not be read. `new` reads robots.txt and
-waits its crawl delay before the listing. It exits 1 when any listed entry is
-new, and 2 when the listing returns the human check or changes shape.
+`check` and `new` read robots.txt and wait its crawl delay, 10 seconds when
+Observed 2026-11-03, before each request; `check` takes about 6 minutes.
+`check` retries timeouts. It exits 1 when any entry changed, disappeared, or
+could not be read. `new` exits 1 when any listed entry is new, and 2 when the
+listing returns the human check or changes shape.
 Standard library only.
 """
 
@@ -33,6 +34,7 @@ SITE = "https://researchdatacatalog.iu.edu"
 BASE = SITE + "/concern/data_sets/"
 LISTING = SITE + "/?sort=system_modified_dtsi+desc&per_page=100"
 USER_AGENT = "research-data-skills/1.0 (+https://github.com/IUSCA/research-data)"
+DEFAULT_DELAY = 10  # seconds; robots.txt's Crawl-delay when it gives none
 CATALOG_MD = pathlib.Path(__file__).resolve().parent.parent / "references" / "catalog.md"
 ROW_RE = re.compile(
     r"^\|\s*(?P<title>[^|]+?)\s*\|.*?concern/data_sets/(?P<id>[0-9a-f-]{36}).*\|\s*(?P<updated>\d{4}-\d{2}-\d{2})\s*\|\s*$"
@@ -90,7 +92,7 @@ def fetch(entry_id, tries=4):
             raise Unreachable("non-JSON reply, probably the human check; open the entry in a browser")
         except (urllib.error.URLError, TimeoutError) as e:
             pass
-        time.sleep(5 * 2 ** attempt)
+        time.sleep(max(5 * 2 ** attempt, DEFAULT_DELAY))
     raise Unreachable(f"no reply after {tries} tries")
 
 
@@ -137,10 +139,33 @@ def cmd_show(arg):
             print(f"{label}:\n    {text(value)}")
 
 
+def read_robots():
+    """Return the site's robots.txt rules, or an error message."""
+    robots = urllib.robotparser.RobotFileParser(SITE + "/robots.txt")
+    try:
+        req = urllib.request.Request(robots.url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            robots.parse(resp.read().decode("utf-8", "replace").splitlines())
+    except (urllib.error.URLError, TimeoutError) as e:
+        return None, f"could not read robots.txt ({e})"
+    return robots, None
+
+
+def crawl_delay(robots):
+    return (robots.crawl_delay(USER_AGENT) if robots else None) or DEFAULT_DELAY
+
+
 def cmd_check():
+    robots, problem = read_robots()
+    if problem:
+        print(f"WARN     {problem}; waiting {DEFAULT_DELAY} seconds between requests")
+    elif not robots.can_fetch(USER_AGENT, BASE):
+        print(f"ERROR    robots.txt now disallows entry pages for this script  {SITE}/robots.txt")
+        return 1
+    delay = crawl_delay(robots)
     changed = failed = 0
     for entry_id, title, updated in recorded():
-        time.sleep(1)
+        time.sleep(delay)
         try:
             data = fetch(entry_id)
         except Unreachable as e:
@@ -174,16 +199,12 @@ def listing_problem(message):
 
 
 def cmd_new():
-    robots = urllib.robotparser.RobotFileParser(SITE + "/robots.txt")
-    try:
-        req = urllib.request.Request(robots.url, headers={"User-Agent": USER_AGENT})
-        with urllib.request.urlopen(req, timeout=30) as resp:
-            robots.parse(resp.read().decode("utf-8", "replace").splitlines())
-    except (urllib.error.URLError, TimeoutError) as e:
-        return listing_problem(f"could not read robots.txt ({e})")
+    robots, problem = read_robots()
+    if problem:
+        return listing_problem(problem)
     if not robots.can_fetch(USER_AGENT, LISTING):
         return listing_problem("robots.txt now disallows the listing for this script")
-    time.sleep(robots.crawl_delay(USER_AGENT) or 10)
+    time.sleep(crawl_delay(robots))
     try:
         req = urllib.request.Request(LISTING, headers={"User-Agent": USER_AGENT})
         with urllib.request.urlopen(req, timeout=60) as resp:

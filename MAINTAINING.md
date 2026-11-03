@@ -42,6 +42,8 @@ and Verified-line rules, commits, and the pull request. This section adds
 only what is specific to this repository.
 
 - `--freshness` also runs `rdc_catalog.py check` and `rdc_catalog.py new`.
+  Both wait the catalog's robots.txt crawl delay, 10 seconds, between
+  requests, so `check` takes about 6 minutes.
   When either exits non-zero, the report prints a `CHANGED` line for it.
   The script's own lines just above it say what changed.
 - Work the catalog's `CHANGED`, `GONE`, and `NEW` lines with
