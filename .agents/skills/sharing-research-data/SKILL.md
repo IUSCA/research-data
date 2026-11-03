@@ -12,6 +12,27 @@ Sharing research data at IU is usually an institutional act, not a personal
 one. Find out what the data's agreements, consent, and classification allow
 before promising anything to a collaborator or a journal.
 
+## When to ask a person
+
+These questions need an IU office. Contacts are from
+`getting-help-with-research-data` and the sections below.
+
+| Situation | Ask | Send |
+| --- | --- | --- |
+| Signing or negotiating a data agreement, or whether one is needed | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The draft agreement, the data, the partner, and the date needed |
+| Sharing institutional data with any third party | University Data Management Council, iudata@iu.edu | The data, its classification, the recipient, and the purpose |
+| Whether consent allows sharing human subjects data | Human Research Protection Program, irb@iu.edu | The IRB protocol number and consent form |
+| A pending patent, a CRADA, or commercialization | Innovation and Commercialization Office, through IU Research | The data and the planned sharing |
+| A collaborator abroad, or export-controlled data | Research Security Office, rsohelp@iu.edu | The data or technology, the country, and the people |
+| Personal data from people in the EU | IU GDPR contact, gdpr@iu.edu | The data, where it came from, and the recipient |
+
+**Recommended.** In these cases, say plainly that the question needs a
+person. Name the office and what to send. Do not offer a best guess as the
+answer. Only the office can decide, and a guess can lead a researcher to
+break an agreement or a rule.
+
+For any other question, see `getting-help-with-research-data`.
+
 ## Rules that always apply
 
 - **Required.** Researchers may not sign data agreements for IU. "At IU, all

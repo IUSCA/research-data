@@ -12,6 +12,26 @@ A data management and sharing plan is required by most federal sponsors. It
 also records decisions IU policy leaves to the PI. Write it to be used, not
 only submitted.
 
+## When to ask a person
+
+These questions need an IU office. Contacts are from
+`getting-help-with-research-data` and the sections below.
+
+| Situation | Ask | Send |
+| --- | --- | --- |
+| A plan due by a routing deadline | RDC plan consultation, booked as below; or resdata@iu.edu, or dataserv@iu.edu at IU Indianapolis | The funding opportunity, a draft, and the deadline, at least three weeks ahead |
+| The data's classification is unclear | Data Steward for Research Data, datard@iu.edu | The data elements and their sources |
+| What a DUA, license, or consent allows | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The agreement and the planned sharing |
+| Retention or sharing of human subjects data | Human Research Protection Program, irb@iu.edu | The IRB protocol number and consent form |
+| NIH controlled-access or genomic data | SecureMyResearch, securemyresearch@iu.edu | The repository, the data, and the planned system |
+
+**Recommended.** In these cases, say plainly that the question needs a
+person. Name the office and what to send. Do not offer a best guess as the
+answer. Only the office can decide, and a guess can lead a researcher to
+break an agreement or a rule.
+
+For any other question, see `getting-help-with-research-data`.
+
 ## Get help first
 
 The RDC offers free consultations of up to one hour to IU faculty on all
