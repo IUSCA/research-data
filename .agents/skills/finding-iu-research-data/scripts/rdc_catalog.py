@@ -5,18 +5,21 @@ Usage:
     rdc_catalog.py list                 # entries recorded in references/catalog.md
     rdc_catalog.py show <id|words>      # one live entry, all fields
     rdc_catalog.py check                # live updated_at versus the recorded date
+    rdc_catalog.py new                  # listed entries not in references/catalog.md
 
-The catalog's search pages under /catalog and its feeds sit behind a
-Cloudflare human check, so this script reads entries by id from each entry's
-open JSON. Find new entries on the home page listing, which was open to
-scripts on 2026-11-03:
-https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100
-Add any entry it lists that references/catalog.md lacks.
+The catalog's /catalog search pages and feeds sit behind a Cloudflare human
+check. Each entry's JSON is open, so `show` and `check` read entries by id.
+The home page listing, newest first, loads from a script (Observed
+2026-11-03), so `new` reads entry ids from it.
 
 `check` pauses between requests and retries timeouts. It exits 1 when any
-entry changed, disappeared, or could not be read. Standard library only.
+entry changed, disappeared, or could not be read. `new` reads robots.txt and
+waits its crawl delay before the listing. It exits 1 when any listed entry is
+new, and 2 when the listing returns the human check or changes shape.
+Standard library only.
 """
 
+import html
 import json
 import pathlib
 import re
@@ -24,8 +27,12 @@ import sys
 import time
 import urllib.error
 import urllib.request
+import urllib.robotparser
 
-BASE = "https://researchdatacatalog.iu.edu/concern/data_sets/"
+SITE = "https://researchdatacatalog.iu.edu"
+BASE = SITE + "/concern/data_sets/"
+LISTING = SITE + "/?sort=system_modified_dtsi+desc&per_page=100"
+USER_AGENT = "research-data-skills/1.0 (+https://github.com/IUSCA/research-data)"
 CATALOG_MD = pathlib.Path(__file__).resolve().parent.parent / "references" / "catalog.md"
 ROW_RE = re.compile(
     r"^\|\s*(?P<title>[^|]+?)\s*\|.*?concern/data_sets/(?P<id>[0-9a-f-]{36}).*\|\s*(?P<updated>\d{4}-\d{2}-\d{2})\s*\|\s*$"
@@ -68,7 +75,7 @@ class Unreachable(Exception):
 def fetch(entry_id, tries=4):
     req = urllib.request.Request(
         BASE + entry_id + ".json",
-        headers={"User-Agent": "research-data-skills/1.0", "Accept": "application/json"},
+        headers={"User-Agent": USER_AGENT, "Accept": "application/json"},
     )
     for attempt in range(tries):
         try:
@@ -152,6 +159,54 @@ def cmd_check():
     return 1 if changed or failed else 0
 
 
+# One listed entry: its <li id="document_<id>"> and the title link inside it.
+LISTED_RE = re.compile(
+    r'id="document_(?P<id>[0-9a-f-]{36})".*?class="search-result-title">\s*<a [^>]*>(?P<title>[^<]*)</a>',
+    re.S,
+)
+TOTAL_RE = re.compile(r'class="page-entries">.*?of\s*<strong>(?P<total>[\d,]+)</strong>', re.S)
+HUMAN_CHECK = ("Verifying you are human", "cf-turnstile", "challenge-platform")
+
+
+def listing_problem(message):
+    print(f"ERROR    catalog listing: {message}  {LISTING}")
+    return 2
+
+
+def cmd_new():
+    robots = urllib.robotparser.RobotFileParser(SITE + "/robots.txt")
+    try:
+        req = urllib.request.Request(robots.url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            robots.parse(resp.read().decode("utf-8", "replace").splitlines())
+    except (urllib.error.URLError, TimeoutError) as e:
+        return listing_problem(f"could not read robots.txt ({e})")
+    if not robots.can_fetch(USER_AGENT, LISTING):
+        return listing_problem("robots.txt now disallows the listing for this script")
+    time.sleep(robots.crawl_delay(USER_AGENT) or 10)
+    try:
+        req = urllib.request.Request(LISTING, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=60) as resp:
+            page = resp.read().decode("utf-8", "replace")
+    except (urllib.error.URLError, TimeoutError) as e:
+        return listing_problem(f"no reply ({e})")
+    if any(mark in page for mark in HUMAN_CHECK):
+        return listing_problem("the page returned the human check; a person must browse it")
+    listed = {m["id"]: html.unescape(m["title"]).strip() for m in LISTED_RE.finditer(page)}
+    total = TOTAL_RE.search(page)
+    if not listed or not total:
+        return listing_problem("no entries or no entry count found; the page changed shape")
+    total = int(total["total"].replace(",", ""))
+    if total != len(listed):
+        return listing_problem(f"the catalog has {total} entries but the page lists {len(listed)}; raise per_page or read more pages")
+    known = {entry_id for entry_id, _, _ in recorded()}
+    new = [(i, t) for i, t in listed.items() if i not in known]
+    for entry_id, title in new:
+        print(f"NEW      {title}  {BASE}{entry_id}")
+    print(f"{len(new)} of {len(listed)} listed entries are not in references/catalog.md.")
+    return 1 if new else 0
+
+
 def main(argv):
     if len(argv) >= 2 and argv[1] == "list":
         return cmd_list()
@@ -159,6 +214,8 @@ def main(argv):
         return cmd_show(" ".join(argv[2:]))
     if len(argv) == 2 and argv[1] == "check":
         return cmd_check()
+    if len(argv) == 2 and argv[1] == "new":
+        return cmd_new()
     print(__doc__.strip())
     return 2
 

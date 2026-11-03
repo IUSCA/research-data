@@ -45,3 +45,11 @@ checks = ["kb", "links"]
 name = "Research Data Catalog"
 run = "python3 .agents/skills/finding-iu-research-data/scripts/rdc_catalog.py check"
 step = "step 2 of MAINTAINING.md"
+
+# The home page listing, newest first, loads from a script without the
+# human check (Observed 2026-11-03). Exits 1 for an entry not yet in
+# references/catalog.md, and 2 if the listing returns the check or changes shape.
+[[freshness.commands]]
+name = "Research Data Catalog, new entries"
+run = "python3 .agents/skills/finding-iu-research-data/scripts/rdc_catalog.py new"
+step = "step 2 of MAINTAINING.md"

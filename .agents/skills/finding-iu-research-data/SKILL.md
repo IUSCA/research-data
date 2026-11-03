@@ -51,12 +51,10 @@ $s/rdc_catalog.py show hcup national inpatient   # title words or an id
 $s/rdc_catalog.py list                           # every recorded entry
 ```
 
-The script reads each entry's JSON. The catalog's search pages under
-`/catalog` and its feeds sit behind a Cloudflare human check. The home page
-listing does not. **Observed 2026-11-03:**
-https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100
-loaded without the check and listed all 35 entries, most recently modified
-first. Use it to see entries added after the snapshot.
+The script reads each entry's JSON. The catalog's search pages and feeds sit
+behind a Cloudflare human check. The home page listing does not, so
+`rdc_catalog.py new` lists entries added after the snapshot (Observed
+2026-11-03).
 
 ## Compare candidates
 
@@ -109,11 +107,12 @@ leaves.
 - Run `scripts/rdc_catalog.py check`. It reports entries whose `updated_at`
   changed, and entries that no longer exist. Update the row in
   `references/catalog.md`, including its date.
-- Open
-  https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100.
-  Add any entry not in `references/catalog.md`. Its count should match the
-  "of N" the page shows. If the page shows "Verifying you are human," a
-  person must open it in a browser.
+- Run `scripts/rdc_catalog.py new`. It reads the home page listing, newest
+  first, and reports entries not in `references/catalog.md`. Run `show` on
+  each, and add its row. It exits 2 if the listing returns the human check
+  or changes shape. Then a person must browse the listing at
+  https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100
+  and compare it by hand.
 - **Open item.** Both `researchdata.iu.edu` and `rdc.iu.edu` serve the RDC
   site, with no redirect. This skill uses `researchdata.iu.edu`, which the
   catalog links back to. Ask iurdc@iu.edu which host is canonical.
@@ -125,8 +124,10 @@ leaves.
 Checked 2026-10-04.
 
 - Research Data Catalog and About page: https://researchdatacatalog.iu.edu,
-  https://researchdatacatalog.iu.edu/about. Home page listing sorted by date
-  modified read 2026-11-03.
+  https://researchdatacatalog.iu.edu/about
+- Catalog home page listing, newest first, read by `rdc_catalog.py new`
+  (Observed 2026-11-03):
+  https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100
 - Data Cataloging Working Group:
   https://researchdata.iu.edu/about/working-groups/data-cataloging/
 - RDC Resource Catalog: https://researchdata.iu.edu/resource-catalog/
