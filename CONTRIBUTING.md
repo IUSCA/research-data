@@ -4,6 +4,13 @@ A skill is only as good as its last check. Update a skill whenever an agent
 or a person finds a claim that no longer matches its source.
 [MAINTAINING.md](MAINTAINING.md) is the runbook for reviewing the whole set.
 
+## Propose a change
+
+Send a pull request with the fix and the source that supports it. If you
+cannot fix it, [open an issue](https://github.com/IUSCA/research-data/issues/new/choose)
+with the "Skill feedback" form. An agent may draft either one. Leave out
+data values, identifiers, secrets, and non-public names.
+
 ## The rule this repository exists for
 
 IU has no single research data policy. These skills must never make a
