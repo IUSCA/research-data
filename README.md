@@ -7,9 +7,10 @@ and sponsor rules.
 
 ## Companion repositories
 
-Four repositories cover research at IU. Skills name a companion's skill by
-its repository and skill name, as in "`sharing-research-data` in
-research-data," and link the first mention to the skill on GitHub.
+Four repositories cover research at IU, and a fifth holds what they share.
+Skills name a companion's skill by its repository and skill name, as in
+"`sharing-research-data` in research-data," and link the first mention to
+the skill on GitHub.
 
 - [research-technologies](https://github.com/IUSCA/research-technologies) covers clusters, storage, data transfer, and
   allocations.
@@ -18,6 +19,10 @@ research-data," and link the first mention to the skill on GitHub.
 - [research-funding](https://github.com/IUSCA/research-funding) covers planning and preparing grant proposals.
 - [research-cores](https://github.com/IUSCA/research-cores) covers core facilities, their instruments, and the data
   they deliver.
+- [iu-research](https://github.com/IUSCA/iu-research) holds what the four
+  share: the checker, the conventions, the monthly review runbook, a skill
+  that reports a problem with any family skill, and one plugin marketplace
+  for all five repositories.
 
 This repository covers the data itself. research-technologies covers where
 it is computed on and stored.
@@ -123,6 +128,10 @@ its description, so you rarely type the name.
 
 To update, run `/plugin marketplace update iusca-research-data`.
 
+To install every family plugin from one marketplace, add `IUSCA/iu-research`
+instead. Its [README](https://github.com/IUSCA/iu-research#as-claude-plugins)
+lists the commands.
+
 The plugin reads the skills from `.agents/skills/`, the directory the other
 harnesses use, so no skill is duplicated. The manifests are
 `.claude-plugin/plugin.json` and `.claude-plugin/marketplace.json`.
@@ -151,8 +160,10 @@ Issues and pull requests are how this repository takes changes.
   with the "Skill feedback" form.
 - To fix it yourself, send a pull request. [CONTRIBUTING.md](CONTRIBUTING.md)
   explains how to verify a claim.
-- Your agent can draft the issue for you. Read it before you submit it, and
-  leave out data values, identifiers, and non-public names.
+- Your agent can draft the issue for you; see `reporting-a-skill-problem`
+  in [iu-research](https://github.com/IUSCA/iu-research). Read the draft
+  before you submit it, and leave out data values, identifiers, and
+  non-public names.
 
 Issues are for the skills, not for questions about data. Send those to the
 office that decides them; `getting-help-with-research-data` lists each one.
