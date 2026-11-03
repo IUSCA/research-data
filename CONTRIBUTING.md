@@ -51,9 +51,11 @@ $s show <id or title words>
 $s check
 ```
 
-The catalog's search pages and feeds are behind a Cloudflare human check.
-Find new entries by browsing https://researchdatacatalog.iu.edu by date
-modified.
+The catalog's `/catalog` search pages and feeds are behind a Cloudflare
+human check. Its home page listing, newest first, is not (Observed
+2026-11-03). `$s new` reads that listing and reports entries not yet in
+`references/catalog.md`. If it returns the human check, a person browses
+the listing instead.
 
 ## Reading IU sources
 

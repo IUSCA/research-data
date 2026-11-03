@@ -16,67 +16,48 @@ covers how to write and verify a single claim.
 
 ## When to review
 
-| Trigger | Scope |
-| --- | --- |
-| Anyone finds a wrong claim | That claim, right away, in its own commit |
-| Monthly | `rdc_catalog.py check`, and browse the catalog for new entries |
-| Every quarter (January, April, July, October) | The full review below |
-| IU adopts a research data policy | Every skill; start with `navigating-research-data-policy` and its policy map |
-| An NIH or NSF data policy notice | `planning-data-management-and-sharing` and `navigating-research-data-policy` |
-| An open issue labeled `freshness` | [Working a freshness issue](#working-a-freshness-issue) |
+| Trigger | Scope | How you notice |
+| --- | --- | --- |
+| Monthly | The `freshness` issue, with the catalog's `CHANGED`, `GONE`, and `NEW` lines ([step 2](#2-refresh-the-catalog-snapshot)) | The `freshness` issue opened on the 1st, and the month's tracking issue on iu-research |
+| Anyone finds a wrong claim | That claim, right away, in its own commit | An issue on this repository |
+| Every quarter (January, April, July, October) | The full review below, after the monthly one | The calendar, and the month's tracking issue |
+| IU adopts a research data policy | Every skill; start with `navigating-research-data-policy` and its policy map | IU policy changes on `policies.iu.edu`, and the RDC news page |
+| An NIH or NSF data policy notice | `planning-data-management-and-sharing` and `navigating-research-data-policy` | The NIH Guide table of contents, and NSF news |
+
+No script notices the last two. The family maintainer assigns someone to
+each feed, as the family runbook's "Watching for events" says.
 
 GitHub Actions runs `tools/check-skills.py` on every pull request and push to
 `main`. On the 1st of each month, `freshness.yml` runs `tools/check-skills.py
---freshness`. Here that means the KB check, the link check, and the catalog
-check. When any finds a change, it opens an issue labeled `freshness`, or
+--freshness`. Here that means the KB check, the link check, and two catalog
+commands. When any finds a change, it opens an issue labeled `freshness`, or
 comments on the one already open.
 
 ## Working a freshness issue
 
-A person or their agent works each `freshness` issue by hand. Nothing
-edits a skill on its own, because every fixed claim needs someone to read
-its source. An agent can do all of this; give it this section and the
-issue. A person reviews and merges the pull request.
+Follow the family runbook,
+[monthly-review.md](https://github.com/IUSCA/iu-research/blob/main/docs/monthly-review.md).
+It has the general steps: how to work each kind of line, the KB snapshot
+and Verified-line rules, commits, and the pull request. This section adds
+only what is specific to this repository.
 
-1. Make a branch from `main`. Run `tools/check-skills.py --freshness`
-   again. The issue may be days old, and some lines may have cleared.
-2. Work each line by kind:
-   - **STALE, KB article changed.** Read the whole article with
-     `iukb.py read KB0123456` (in research-technologies'
-     `searching-the-iu-knowledge-base` skill). Find every claim citing it,
-     in each skill the line names and in that skill's `references/`.
-     Fix what changed. Then record the reading with
-     `tools/check-skills.py --kb-snapshot KB0123456`.
-   - **INFO, text unchanged.** The article was touched but its text was
-     not. Record it with `--kb-snapshot KB0123456`. No skill changes.
-   - **STALE, not found by KB search.** The search runs without logging
-     in, so the article was retired, renumbered, or made login-only.
-     Search for its replacement. If there is none, name the article
-     without a link, with the date it went missing. Never quote or
-     summarize a login-only article, even if you can read it.
-   - **STALE, Verified date too old.** Re-read every source the skill
-     cites, then update its Verified line.
-   - **BROKEN.** Run `--links` again; a single failure is often transient.
-     If it still fails, find the page's new address. If the page is gone,
-     find another source or make the claim an open item.
-   - **CHANGED.** Run the snapshot script named in the line. Update the
-     catalog or directory file it compares against, and every skill that
-     names what changed.
-3. A claim the new source no longer supports is fixed, cut, or turned into
-   an open item in `docs/open-items.md`. A question the source now settles
-   leaves the open items.
-4. Update the Verified line of each skill you edited. For an article with
-   a snapshot entry, `--kb-snapshot` is the record, so the Verified line
-   does not need to list it as a partial re-read.
-5. Run `tools/check-skills.py --freshness` until no STALE, BROKEN, or
-   CHANGED line remains. Commit one skill per commit, with the snapshot
-   change in the same commit as the skill it supports.
-6. Open a pull request that says `Closes #<issue>`. List each line and
-   what you did with it: fixed, unchanged, or opened as an item.
+- `--freshness` also runs `rdc_catalog.py check` and `rdc_catalog.py new`.
+  Both wait the catalog's robots.txt crawl delay, 10 seconds, between
+  requests, so `check` takes about 6 minutes.
+  When either exits non-zero, the report prints a `CHANGED` line for it.
+  The script's own lines just above it say what changed.
+- Work the catalog's `CHANGED`, `GONE`, and `NEW` lines with
+  [step 2](#2-refresh-the-catalog-snapshot) of the full review.
+- `new` exits 2 when the listing returns the human check or changes shape.
+  Then a person must browse the listing and compare it with
+  `references/catalog.md` by hand. Note it on the tracking issue.
+- KB0023515 is also cited in research-technologies. Look for a note on the
+  tracking issue before you re-read it.
 
 ## Full review
 
-Work on a branch. Make one commit per skill.
+Work on a branch. Commit as the family runbook's "Commits" section says:
+one skill per commit, with each KB snapshot in the commit it supports.
 
 ### 1. Lint and check links
 
@@ -84,22 +65,24 @@ Work on a branch. Make one commit per skill.
 tools/check-skills.py --kb --links
 ```
 
-`ERROR` and `BROKEN` lines must be fixed. A broken IU link often means a
-page moved. Search the site for its new address before removing the claim.
-`STALE` lines name a skill over 120 days past its Verified date, or a KB
-article whose text changed since `tools/kb-snapshot.json` recorded it. Re-read those sources in steps 3 and 4.
+`ERROR` lines must be fixed. Work `STALE`, `INFO`, and `BROKEN` lines as
+the family runbook's step 3 says. Then open each `skip_urls` entry whose
+comment says "check by hand", and confirm it lands where the comment says.
 
 ### 2. Refresh the catalog snapshot
 
 ```bash
 s=.agents/skills/finding-iu-research-data/scripts/rdc_catalog.py
 $s check
+$s new
 ```
 
 For each `CHANGED` entry, run `$s show <id>`. Update its row in
 `references/catalog.md`, including the date. For `GONE`, remove the row and
-note it in the commit. Then browse https://researchdatacatalog.iu.edu sorted
-by date modified, and add new entries.
+note it in the commit. For each `NEW` entry, run `$s show <id>`, and add a
+row in the right section. `new` reads the catalog's home page listing,
+which loads from a script without the human check (Observed 2026-11-03).
+The `/catalog` search pages and feeds still return the check.
 
 ### 3. Re-read the policies
 
