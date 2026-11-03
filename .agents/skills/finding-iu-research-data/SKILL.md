@@ -5,8 +5,10 @@ description: Find research data that Indiana University already has or can get, 
 
 # Finding IU research data
 
-Verified 2026-10-04 against the IU Research Data Commons (RDC) site and the
-Research Data Catalog. Sources are listed at the end.
+Verified 2026-11-03 (the catalog home page listing and all 35 entries'
+JSON only). Other sources were verified 2026-10-04 against the IU Research
+Data Commons (RDC) site and the Research Data Catalog. Sources are listed at
+the end.
 
 Start with the Research Data Catalog, then confirm the entry live before
 advising anyone. Access terms, eligibility, and contacts change. A copy in
@@ -36,7 +38,7 @@ For any other question, see `getting-help-with-research-data`.
   datasets "available to researchers at Indiana University, including
   licensed data sets and, in some cases, publicly-available data." It is
   curated by the RDC Data Cataloging Working Group. It held 35 entries when
-  Observed 2026-10-04.
+  Observed 2026-11-03.
 - **RDC Resource Catalog**, https://researchdata.iu.edu/resource-catalog/,
   lists services, units, and policies rather than datasets. Use it to find
   RADaRS, the Federal Statistical Research Data Center, ICPSR, and support
@@ -67,9 +69,12 @@ $s/rdc_catalog.py show hcup national inpatient   # title words or an id
 $s/rdc_catalog.py list                           # every recorded entry
 ```
 
-The script reads each entry's JSON. The catalog's search pages and feeds sit
-behind a Cloudflare human check. A person must browse the catalog to see
-entries added after the snapshot.
+The script reads each entry's JSON. The catalog's search pages under
+`/catalog` and its feeds sit behind a Cloudflare human check. The home page
+listing does not. **Observed 2026-11-03:**
+https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100
+loaded without the check and listed all 35 entries, most recently modified
+first. Use it to see entries added after the snapshot.
 
 ## Compare candidates
 
@@ -122,8 +127,11 @@ leaves.
 - Run `scripts/rdc_catalog.py check`. It reports entries whose `updated_at`
   changed, and entries that no longer exist. Update the row in
   `references/catalog.md`, including its date.
-- Browse https://researchdatacatalog.iu.edu sorted by date modified. Add any
-  entry not in `references/catalog.md`.
+- Open
+  https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100.
+  Add any entry not in `references/catalog.md`. Its count should match the
+  "of N" the page shows. If the page shows "Verifying you are human," a
+  person must open it in a browser.
 - **Open item.** Both `researchdata.iu.edu` and `rdc.iu.edu` serve the RDC
   site, with no redirect. This skill uses `researchdata.iu.edu`, which the
   catalog links back to. Ask iurdc@iu.edu which host is canonical.
@@ -135,7 +143,8 @@ leaves.
 Checked 2026-10-04.
 
 - Research Data Catalog and About page: https://researchdatacatalog.iu.edu,
-  https://researchdatacatalog.iu.edu/about
+  https://researchdatacatalog.iu.edu/about. Home page listing sorted by date
+  modified read 2026-11-03.
 - Data Cataloging Working Group:
   https://researchdata.iu.edu/about/working-groups/data-cataloging/
 - RDC Resource Catalog: https://researchdata.iu.edu/resource-catalog/

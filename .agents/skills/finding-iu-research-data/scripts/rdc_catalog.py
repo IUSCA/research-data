@@ -6,10 +6,12 @@ Usage:
     rdc_catalog.py show <id|words>      # one live entry, all fields
     rdc_catalog.py check                # live updated_at versus the recorded date
 
-The catalog's search pages and feeds sit behind a Cloudflare human check, so
-this script cannot list new entries. Each entry's JSON is open, so it reads
-entries by id. Find new entries by browsing https://researchdatacatalog.iu.edu
-sorted by date modified, then add them to references/catalog.md.
+The catalog's search pages under /catalog and its feeds sit behind a
+Cloudflare human check, so this script reads entries by id from each entry's
+open JSON. Find new entries on the home page listing, which was open to
+scripts on 2026-11-03:
+https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100
+Add any entry it lists that references/catalog.md lacks.
 
 `check` pauses between requests and retries timeouts. It exits 1 when any
 entry changed, disappeared, or could not be read. Standard library only.
