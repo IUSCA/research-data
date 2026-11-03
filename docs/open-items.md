@@ -17,10 +17,11 @@ update the skill that names it and delete the item here.
 4. Has the secure enclave named as a 2025–26 priority launched, and under
    what name? (`accessing-health-and-clinical-data`,
    `using-licensed-and-public-data`)
-5. Would the RDC open the catalog's JSON feed to scripts, or publish a list of
-   entry ids? The search pages under `/catalog` and the feeds are behind a
-   human check. The home page listing was open to scripts on 2026-11-03;
-   ask whether that will stay so. (`finding-iu-research-data`)
+5. Will the catalog's home page listing stay open to scripts? It loads
+   without the human check (Observed 2026-11-03), and `rdc_catalog.py new`
+   relies on it. The `/catalog` search pages and feeds still return the
+   check. Would the RDC open the JSON feed to scripts too?
+   (`finding-iu-research-data`)
 6. Web of Science coverage dates conflict on its entry (1990 versus 1900).
    HCUP IN SID has no access instructions. (`finding-iu-research-data`)
 7. Is WRDS licensed for campuses other than IU Bloomington?
