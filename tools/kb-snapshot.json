@@ -3,9 +3,9 @@
     "title": "About institutional data at IU",
     "version": "3.0",
     "published": "2025-10-06",
-    "updated": "2025-11-14",
+    "updated": "2026-10-28",
     "sha256": "6cde5afbf87f57c8ca24b762927bac9cb6615c243d15c05d4ef3ce4eee6e979d",
-    "taken": "2026-10-07"
+    "taken": "2026-11-03"
   },
   "KB0022478": {
     "title": "Secure research data containing HIPAA-regulated PHI on high performance file systems at IU",
@@ -35,9 +35,9 @@
     "title": "About protected health information (PHI) data elements in the classifications of institutional data",
     "version": "2.0",
     "published": "2024-09-26",
-    "updated": "2025-11-14",
+    "updated": "2026-10-28",
     "sha256": "93554c30d46d6714c81d9d2fd2d40de10f7036e28b527dc5c74ee17f36bd398e",
-    "taken": "2026-10-07"
+    "taken": "2026-11-03"
   },
   "KB0023604": {
     "title": "About dedicated file storage services and IT services with storage components appropriate for sensitive institutional data, including research data containing protected health information",
@@ -59,9 +59,9 @@
     "title": "About sensitive data at IU",
     "version": "1.0",
     "published": "2024-09-16",
-    "updated": "2025-11-14",
+    "updated": "2026-10-28",
     "sha256": "6f351300e6787ae7e3fd7e7e7d47d372696153db026b234b0c670b23096da76e",
-    "taken": "2026-10-07"
+    "taken": "2026-11-03"
   },
   "KB0025720": {
     "title": "About the Scholarly Data Share (SDS) service",
@@ -91,9 +91,9 @@
     "title": "Acceptable use of AI tools with IU research data",
     "version": "11.0",
     "published": "2026-09-23",
-    "updated": "2026-09-23",
+    "updated": "2026-10-29",
     "sha256": "41f2cd5864cc3babfd538ec9a39d35ce5a4a24a4ae49824aabfc2bfbc6fe50f8",
-    "taken": "2026-10-07"
+    "taken": "2026-11-03"
   },
   "KB0027312": {
     "title": "Researcher responsibilities for using AI tools with research data at IU",
