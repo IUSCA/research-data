@@ -16,14 +16,16 @@ only submitted.
 
 These questions need an IU office. Contacts are from
 `getting-help-with-research-data` and the sections below.
+Read the KB article cited with a contact for its current form, and cite it.
+A contact marked "not the IU KB" comes from the page named with it.
 
 | Situation | Ask | Send |
 | --- | --- | --- |
-| A plan due by a routing deadline | RDC plan consultation, booked as below; or resdata@iu.edu, or dataserv@iu.edu at IU Indianapolis | The funding opportunity, a draft, and the deadline, at least three weeks ahead |
-| The data's classification is unclear | Data Steward for Research Data, datard@iu.edu | The data elements and their sources |
-| What a DUA, license, or consent allows | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The agreement and the planned sharing |
-| Retention or sharing of human subjects data | Human Research Protection Program, irb@iu.edu | The IRB protocol number and consent form |
-| NIH controlled-access or genomic data | SecureMyResearch, securemyresearch@iu.edu | The repository, the data, and the planned system |
+| A plan due by a routing deadline | RDC plan consultation, booked as below; or resdata@iu.edu (from the [IU Libraries Research Data Services page](https://libraries.indiana.edu/research-data-services), not the IU KB), or dataserv@iu.edu at IU Indianapolis (from the [RDC DMP consultation page](https://researchdata.iu.edu/resources/dmp-consultation/), not the IU KB) | The funding opportunity, a draft, and the deadline, at least three weeks ahead |
+| The data's classification is unclear | Data Steward for Research Data, datard@iu.edu ([KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817)) | The data elements and their sources |
+| What a DUA, license, or consent allows | ORA Research Contracting, Unfunded Agreement Request Form in One.IU (from [IU Research, other agreements](https://research.iu.edu/awards-agreements/research-agreements/other-agreements.html), not the IU KB) | The agreement and the planned sharing |
+| Retention or sharing of human subjects data | Human Research Protection Program, irb@iu.edu ([KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110)) | The IRB protocol number and consent form |
+| NIH controlled-access or genomic data | SecureMyResearch, securemyresearch@iu.edu ([KB0025362](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025362)) | The repository, the data, and the planned system |
 
 **Recommended.** In these cases, say plainly that the question needs a
 person. Name the office and what to send. Do not offer a best guess as the
@@ -43,9 +45,9 @@ Data librarians help with plans and the rest of the data lifecycle:
 
 | Campus | Contact |
 | --- | --- |
-| IU Bloomington and regional campuses | IU Libraries Research Data Services, resdata@iu.edu |
-| IU Indianapolis | University Library, dataserv@iu.edu |
-| IU School of Medicine | Ruth Lilly Medical Library data services |
+| IU Bloomington and regional campuses | IU Libraries Research Data Services, resdata@iu.edu (from the [IU Libraries Research Data Services page](https://libraries.indiana.edu/research-data-services), not the IU KB) |
+| IU Indianapolis | University Library, dataserv@iu.edu (from the [RDC DMP consultation page](https://researchdata.iu.edu/resources/dmp-consultation/), not the IU KB) |
+| IU School of Medicine | Ruth Lilly Medical Library data services; [KB0023660](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023660) lists the library's Ask a Medical Librarian page |
 
 DMPTool and the SecureMyResearch Cookbook are self-service options. The RDC
 page links both.
@@ -175,3 +177,11 @@ Checked 2026-10-04.
 - RDC DMP consultation: https://researchdata.iu.edu/resources/dmp-consultation/
 - External: NIST RDaF v2.0, SP 1500-18r2,
   https://nvlpubs.nist.gov/nistpubs/SpecialPublications/1500-18/NIST.SP.1500-18r2.html
+- [KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817), Acceptable use of AI tools with IU research data: datard@iu.edu, read 2026-11-05
+- [KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110), About Terracotta at IU: irb@iu.edu for IRB approval questions, read 2026-11-05
+- [KB0025362](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025362), About SecureMyResearch, read 2026-11-05
+- IU Libraries Research Data Services:
+  https://libraries.indiana.edu/research-data-services
+- IU Research, other research agreements:
+  https://research.iu.edu/awards-agreements/research-agreements/other-agreements.html
+- [KB0023660](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023660), About campus libraries and your campus librarian, read 2026-11-05

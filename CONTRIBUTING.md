@@ -103,6 +103,10 @@ sharing guide only). Other sources were verified 2026-10-04.`
   entry's Public Contact is the source for a dataset's contact. Add a new
   office address to `allowed_emails` in `tools/check-skills.toml`. The
   checker fails any other address, and any internal hostname.
+- Cite the source next to each contact. Use the IU KB article that lists
+  it, linked as in Sources, so an agent can read the article live. When no
+  KB article lists it, link the office page it came from, and say it is
+  not from the IU KB. Cite only an article you read that contains it.
 - Date every **Observed** statement. The checker fails one without a date.
 
 Run `tools/check-skills.py` before committing. It must exit cleanly.

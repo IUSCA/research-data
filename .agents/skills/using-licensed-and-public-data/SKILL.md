@@ -16,13 +16,15 @@ an eligible role.
 
 These questions need a person. Contacts are from
 `getting-help-with-research-data` and the sections below.
+Read the KB article cited with a contact for its current form, and cite it.
+A contact marked "not the IU KB" comes from the page named with it.
 
 | Situation | Ask | Send |
 | --- | --- | --- |
-| Whether a license covers your campus, role, collaborators, or derived data | The catalog entry's Public Contact; for library licenses, resdata@iu.edu | The dataset, your role and campus, and the planned use |
-| Buying data, or signing a license or DUA | The RDC, iurdc@iu.edu, first; then your unit's financial manager and ORA or IU Purchasing | The dataset, the supplier, the cost, and the planned use |
-| Restricted federal data, RADaRS, or ICPSR | Social Science Research Commons, ssrc@iu.edu | The dataset, the provider's terms, and the project |
-| Social media data with personal identifiers | Human Research Protection Program, irb@iu.edu | The archive, the data elements, and the study design |
+| Whether a license covers your campus, role, collaborators, or derived data | The catalog entry's Public Contact; for library licenses, resdata@iu.edu (from the [IU Libraries Research Data Services page](https://libraries.indiana.edu/research-data-services), not the IU KB) | The dataset, your role and campus, and the planned use |
+| Buying data, or signing a license or DUA | The RDC, iurdc@iu.edu (from the [RDC contact page](https://researchdata.iu.edu/about/contact/), not the IU KB), first; then your unit's financial manager and ORA or IU Purchasing | The dataset, the supplier, the cost, and the planned use |
+| Restricted federal data, RADaRS, or ICPSR | Social Science Research Commons, ssrc@iu.edu (from the [RDC RADaRS page](https://researchdata.iu.edu/resource-catalog/radars/), not the IU KB) | The dataset, the provider's terms, and the project |
+| Social media data with personal identifiers | Human Research Protection Program, irb@iu.edu ([KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110)) | The archive, the data elements, and the study design |
 
 **Recommended.** In these cases, say plainly that the question needs a
 person. Name the office and what to send. Do not offer a best guess as the
@@ -80,7 +82,7 @@ participant identifiers is **Critical**. See `classifying-research-data`.
 - **RADaRS**, the Restricted Access Data Remote Server, is run by the SSRC
   with UITS. It is a Windows secure environment in which "A data custodian
   manages all ingress and egress." Use it when a provider requires an
-  enclave. Contact ssrc@iu.edu.
+  enclave. Contact ssrc@iu.edu (from the [RDC RADaRS page](https://researchdata.iu.edu/resource-catalog/radars/), not the IU KB).
 - **Indiana Federal Statistical Research Data Center (FSRDC)** gives approved
   projects access to restricted data from federal agencies such as NCHS,
   AHRQ, BEA, NCSES, and IRS SOI.
@@ -139,3 +141,5 @@ Checked 2026-10-04.
 - IU Indianapolis University Library datasets policy:
   https://library.indianapolis.iu.edu/policies/collection/datasets
 - IU Data Classification Matrix: https://datamanagement.iu.edu/tools/matrix.html
+- [KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110), About Terracotta at IU: irb@iu.edu for IRB approval questions, read 2026-11-05
+- RDC contact page: https://researchdata.iu.edu/about/contact/
