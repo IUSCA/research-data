@@ -1,7 +1,7 @@
 # Open items
 
 Questions no public source answers, or where sources conflict, as of
-2026-10-04. They are grouped by the office that can settle each one. Send
+2026-10-04 (items 1 to 22) and 2026-11-05 (items 23 to 32). They are grouped by the office that can settle each one. Send
 one message per office with its questions batched. When an item closes,
 update the skill that names it and delete the item here.
 
@@ -80,6 +80,55 @@ update the skill that names it and delete the item here.
     Indiana CTSI offer TriNetX? (`accessing-health-and-clinical-data`)
 19. INPC size differs by source: "10 billion clinical observations" (RDS)
     and "13 billion data elements" (CTSI). (`accessing-health-and-clinical-data`)
+
+## Indiana Biobank (inbiobnk@iu.edu)
+
+23. The home page says "over 80,000 patients have consented"; the access
+    page says "DNA specimens from over 60,000 residents." Which is current,
+    and what does each count? (`accessing-health-and-clinical-data`,
+    `finding-iu-research-data`)
+24. What IRB approval, fees, or cost recovery apply to a data portal
+    request, and to DNA specimens? Neither is stated on the public pages.
+    (`accessing-health-and-clinical-data`)
+
+## Regenstrief (askrds@regenstrief.org), continued
+
+25. Regenstrief has both a "Regenstrief Data Core" page and a "Regenstrief
+    Data Services" page, each describing INPC access. Which name and request
+    path is current? (`accessing-health-and-clinical-data`)
+
+## IU Libraries (resdata@iu.edu, libbus@iu.edu) and the SSRC (ssrc@iu.edu)
+
+26. Does IU license PolicyMap, Mergent, PitchBook, or Data-Planet? None
+    appeared on the IU guides read 2026-11-05. (`finding-iu-research-data`)
+27. Do Roper Center, Social Explorer, and SimplyAnalytics access extend to
+    IU Indianapolis? The A–Z entries name IU Bloomington only.
+    (`finding-iu-research-data`)
+
+## Other IU units
+
+28. Center for Postsecondary Research (nsse@iu.edu): is there a current NSSE
+    data request page? The only source is a 2020 post.
+    (`finding-iu-research-data`)
+29. Indiana Geological and Water Survey: what are the access terms for its
+    data site, which returned a browser check? (`finding-iu-research-data`)
+30. Lilly Family School of Philanthropy: how do researchers get the
+    Philanthropy Panel Study? (`finding-iu-research-data`)
+
+## Indiana Management Performance Hub (contact form)
+
+31. When will data request intake reopen, and is there a route for IU
+    researchers? Intake was "paused" on 2026-11-05.
+    (`finding-iu-research-data`)
+
+## Repositories that refuse scripted reads
+
+32. ICPSR, UK Biobank, Harvard Dataverse's support site, and
+    researchdatagov.org returned HTTP 403 on 2026-11-05; GEO returned a
+    browser check; NDA's site needs a browser. A person should read their
+    access pages and fill in `finding-data-in-public-repositories`. Search
+    results, not UK Biobank's site, said UK Biobank had paused applications.
+    (`finding-data-in-public-repositories`)
 
 ## Federal
 

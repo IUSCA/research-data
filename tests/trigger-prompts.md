@@ -24,6 +24,10 @@ Step 6 of `MAINTAINING.md` explains the test.
 | Is it required or just recommended to have a data management plan for unfunded work? | `navigating-research-data-policy` |
 | What do I need to do to use dbGaP data at IU? | `navigating-research-data-policy` |
 | Whom do I ask about sharing data with a company? | `getting-help-with-research-data` |
+| How do I get samples and genotype data from the Indiana Biobank? | `accessing-health-and-clinical-data` |
+| Does IU have Roper Center polls or anything from the Kinsey Institute I can use? | `finding-iu-research-data` |
+| Where can I find published gene expression datasets to reuse? | `finding-data-in-public-repositories` |
+| Which public repositories have satellite or climate data I can download? | `finding-data-in-public-repositories` |
 
 ## Plain-language prompts
 
@@ -49,6 +53,8 @@ expected skill first.
 | Is there an actual rule about what I must do with my research data, or is it all advice? | `navigating-research-data-policy` |
 | I have a question about my study's data and I don't know who to ask. | `getting-help-with-research-data` |
 | Who at the university can help me figure out what to do with my research data? | `getting-help-with-research-data` |
+| If I want to find a clinical population with certain medical histories, what data sets are available to me? What about the Indiana Biobank? | `accessing-health-and-clinical-data` |
+| Is there free national survey data I could use instead of running my own survey? | `finding-data-in-public-repositories` |
 | Is there somewhere safe to keep interview recordings? | `classifying-research-data` |
 | I need to send a few terabytes of data to a collaborator at another university. What's the best way to transfer it? | `storing-and-moving-research-data` in research-technologies |
 | I can't get into the server where my project's data is stored. Who do I contact? | `getting-help-from-research-technologies` in research-technologies |

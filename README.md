@@ -68,8 +68,10 @@ Sources rank this way:
    Base, IU Research pages, and Research Data Commons guides, explains how to
    follow them.
 3. **The Research Data Catalog** (`researchdatacatalog.iu.edu`) is the source
-   of truth for which datasets exist and how to request them. Each skill
-   links to catalog entries instead of copying their access terms.
+   of truth for the datasets it lists and how to request them. Each skill
+   links to catalog entries instead of copying their access terms. For IU
+   data the catalog does not list, such as the Indiana Biobank, the
+   inventory in `finding-iu-research-data` links each resource's own page.
 
 ## A note for agents and the people using them
 
@@ -86,13 +88,18 @@ the details.
 | Skill | Use it when |
 | --- | --- |
 | [finding-iu-research-data](.agents/skills/finding-iu-research-data/SKILL.md) | Looking for data for a research question, or checking whether IU already has a dataset. Start here. |
-| [accessing-health-and-clinical-data](.agents/skills/accessing-health-and-clinical-data/SKILL.md) | Requesting INPC, IU Health, or Eskenazi records, or using HCUP, MarketScan, All of Us, or biospecimen data. |
+| [accessing-health-and-clinical-data](.agents/skills/accessing-health-and-clinical-data/SKILL.md) | Requesting INPC, IU Health, or Eskenazi records, or using Indiana Biobank, HCUP, MarketScan, All of Us, or biospecimen data. |
 | [using-licensed-and-public-data](.agents/skills/using-licensed-and-public-data/SKILL.md) | Using library-licensed, Kelley-licensed, ICPSR, OSoMe, or restricted federal data, or buying a dataset. |
+| [finding-data-in-public-repositories](.agents/skills/finding-data-in-public-repositories/SKILL.md) | Looking beyond IU: dbGaP, GEO, UK Biobank, ICPSR, IPUMS, Census, Zenodo, NOAA, and other public or controlled-access repositories. |
 | [classifying-research-data](.agents/skills/classifying-research-data/SKILL.md) | Deciding whether data is Public, University-internal, Restricted, or Critical, and what that allows. |
 | [planning-data-management-and-sharing](.agents/skills/planning-data-management-and-sharing/SKILL.md) | Writing an NIH or NSF data management and sharing plan, or planning retention. |
 | [sharing-research-data](.agents/skills/sharing-research-data/SKILL.md) | Sharing data with a collaborator, a repository, or the public, or moving data when someone leaves IU. |
 | [navigating-research-data-policy](.agents/skills/navigating-research-data-policy/SKILL.md) | Asking who owns data, how long to keep it, what a PI is responsible for, or what NIH controlled-access rules need. |
 | [getting-help-with-research-data](.agents/skills/getting-help-with-research-data/SKILL.md) | Deciding which IU office to ask, and what to send. |
+
+`finding-data-in-public-repositories` covers repositories outside IU, and
+is written for any institution. It lives here for now. It moves to a
+repository of its own only if it grows beyond this repository's scope.
 
 ## Use the skills
 

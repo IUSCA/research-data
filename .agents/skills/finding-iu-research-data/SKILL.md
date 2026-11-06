@@ -1,17 +1,19 @@
 ---
 name: finding-iu-research-data
-description: Find research data that Indiana University already has or can get, using the IU Research Data Commons (RDC) Research Data Catalog as the source of truth. Covers matching a research question to datasets such as INPC, HCUP, MarketScan, All of Us, Human Connectome Project, OSoMe social media archives, WRDS, CoreLogic, Web of Science, and library-licensed data, and checking eligibility and campus. Use when someone asks what data IU has on a topic, whether IU already has or licenses a dataset before they buy or collect their own, or where to start looking for existing data for a project.
+description: Find research data that Indiana University already has or can get, using the IU Research Data Commons (RDC) Research Data Catalog and this repository's inventory of IU data resources the catalog does not list. Covers matching a research question to datasets such as INPC, the Indiana Biobank, NCRAD, HCUP, MarketScan, All of Us, Human Connectome Project, OSoMe social media archives, WRDS, CoreLogic, Web of Science, ICPSR, the Kinsey Institute, Indiana state data, and library-licensed data, and checking eligibility and campus. Use when someone asks what data IU has on a topic, whether IU already has or licenses a dataset before they buy or collect their own, or where to start looking for existing data for a project.
 ---
 
 # Finding IU research data
 
-Verified 2026-11-03 (the catalog home page listing and all 35 entries'
-JSON only). Other sources were verified 2026-10-04 against the IU Research
+Verified 2026-11-05 (the inventory and its sources only). Verified
+2026-11-03 (the catalog home page listing and all 35 entries' JSON only).
+Other sources were verified 2026-10-04 against the IU Research
 Data Commons (RDC) site and the Research Data Catalog. Sources are listed at
 the end.
 
-Start with the Research Data Catalog, then confirm the entry live before
-advising anyone. Access terms, eligibility, and contacts change. A copy in
+Search two lists: the Research Data Catalog, and this skill's inventory of
+IU data resources the catalog does not list. Then confirm the entry live,
+on the catalog or the resource's own page, before advising anyone. Access terms, eligibility, and contacts change. A copy in
 this skill is a lead, not an answer.
 
 ## When to ask a person
@@ -49,6 +51,12 @@ For any other question, see `getting-help-with-research-data`.
   CoreLogic, INPC, HCUP, environmental data, All of Us, Web of Science, and
   the Human Connectome Project.
 
+- **This skill's inventory**, [references/inventory.md](references/inventory.md),
+  lists IU-held and IU-licensed data resources found on public IU pages but
+  not in the catalog. Examples are the Indiana Biobank, NCRAD, the Kinsey
+  Institute collections, and state data partnerships. Each row is Observed,
+  with its source and date.
+
 The RDC itself says no complete list exists: "There is not a current,
 comprehensive catalog of data assets owned by Indiana University." A dataset
 missing from the catalog may still be licensed somewhere at IU. See "When the
@@ -58,6 +66,10 @@ catalog has nothing" below.
 
 1. Read [references/catalog.md](references/catalog.md). It groups the 35
    entries by domain, with host, eligibility, campus, and access route.
+   Then read [references/inventory.md](references/inventory.md) for the
+   same domain. **Recommended.** Always check both. The catalog is
+   incomplete by the RDC's own account, and the inventory covers known
+   gaps, such as the Indiana Biobank.
 2. Match on the research question, not only the keyword. For example,
    hospital utilization questions fit HCUP, MarketScan, or INPC. They differ
    in population, identifiability, and access burden.
@@ -99,7 +111,11 @@ Then hand off:
 secure enclave can add weeks. Say so before someone builds a project plan on
 a dataset.
 
-## When the catalog has nothing
+## When neither list has it
+
+If IU holds nothing suitable, a public or controlled-access repository
+outside IU may. `finding-data-in-public-repositories` covers dbGaP, GEO,
+ICPSR, UK Biobank, Census and IPUMS, generalist repositories, and others.
 
 The RDC's guidance for checking whether IU already owns data:
 
@@ -134,6 +150,10 @@ leaves.
   or changes shape. Then a person must browse the listing at
   https://researchdatacatalog.iu.edu/?sort=system_modified_dtsi+desc&per_page=100
   and compare it by hand.
+- Re-read each source in `references/inventory.md` every quarter, and
+  update its Observed date. `tools/check-skills.py --links` checks its URLs
+  monthly. Move a row to `references/catalog.md` when the catalog adds it,
+  and tell the RDC about rows it lacks.
 - **Open item.** Both `researchdata.iu.edu` and `rdc.iu.edu` serve the RDC
   site, with no redirect. This skill uses `researchdata.iu.edu`, which the
   catalog links back to. Ask iurdc@iu.edu which host is canonical.
@@ -162,3 +182,5 @@ Checked 2026-10-04.
 - IU Libraries Research Data Services:
   https://libraries.indiana.edu/research-data-services
 - RDC DMP consultation: https://researchdata.iu.edu/resources/dmp-consultation/
+- The IU and partner pages listed in `references/inventory.md`, each with
+  its own Observed date (checked 2026-11-05).
