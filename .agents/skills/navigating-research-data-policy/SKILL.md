@@ -28,14 +28,16 @@ a recommendation as an IU rule.
 
 These questions need an IU office. Contacts are from
 `getting-help-with-research-data` and the sections below.
+Read the KB article cited with a contact for its current form, and cite it.
+A contact marked "not the IU KB" comes from the page named with it.
 
 | Situation | Ask | Send |
 | --- | --- | --- |
-| An open item, or a question under "Where policy is silent" | Research Data Commons, iurdc@iu.edu, which routes questions | The question, the project, and the agreements on the data |
-| Ownership set by an agreement, or signing one | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The agreement and the data it covers |
-| IRB approval or human subjects data rules | Human Research Protection Program, irb@iu.edu | The IRB protocol number and the question |
-| Requesting NIH controlled-access data | SecureMyResearch, securemyresearch@iu.edu | The repository, the data, and the planned system, before the request |
-| A suspected exposure of sensitive data | IU incident reporting, https://informationsecurity.iu.edu/report-incident/; for PHI, it-incident@iu.edu | What may have been exposed, where, and when |
+| An open item, or a question under "Where policy is silent" | Research Data Commons, iurdc@iu.edu (from the [RDC contact page](https://researchdata.iu.edu/about/contact/), not the IU KB), which routes questions | The question, the project, and the agreements on the data |
+| Ownership set by an agreement, or signing one | ORA Research Contracting, Unfunded Agreement Request Form in One.IU (from [IU Research, other agreements](https://research.iu.edu/awards-agreements/research-agreements/other-agreements.html), not the IU KB) | The agreement and the data it covers |
+| IRB approval or human subjects data rules | Human Research Protection Program, irb@iu.edu ([KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110)) | The IRB protocol number and the question |
+| Requesting NIH controlled-access data | SecureMyResearch, securemyresearch@iu.edu ([KB0025362](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025362)) | The repository, the data, and the planned system, before the request |
+| A suspected exposure of sensitive data | IU incident reporting, https://informationsecurity.iu.edu/report-incident/ ([KB0025260](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025260)); for PHI, it-incident@iu.edu (from the [incident reporting page](https://informationsecurity.iu.edu/report-incident/index.html), not the IU KB; [KB0022752](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0022752) lists it as the UISO address) | What may have been exposed, where, and when |
 
 **Recommended.** In these cases, say plainly that the question needs a
 person. Name the office and what to send. Do not offer a best guess as the
@@ -132,7 +134,7 @@ retention, disposal, or archiving; see the policy map.
   systems" meet the requirements.
 - **Open item.** IU does not publicly name its designated systems. The KB
   article IU links for instructions, KB0026806, is not visible without
-  logging in. Ask securemyresearch@iu.edu before requesting
+  logging in. Ask securemyresearch@iu.edu ([KB0025362](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025362)) before requesting
   controlled-access data.
 - NIH's draft Controlled-Access Data Policy (NOT-OD-26-023) is proposed, not
   in force. It would require controlled access for more kinds of data, such
@@ -197,3 +199,8 @@ Checked 2026-10-04.
   https://grants.nih.gov/grants/guide/notice-files/NOT-OD-24-157.html
 - External: NOT-OD-26-023,
   https://grants.nih.gov/grants/guide/notice-files/NOT-OD-26-023.html
+- [KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110), About Terracotta at IU: irb@iu.edu for IRB approval questions, read 2026-11-05
+- [KB0025362](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025362), About SecureMyResearch, read 2026-11-05
+- [KB0025260](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025260), Report a suspected IT security issue at IU, read 2026-11-05
+- [KB0022752](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0022752), Know if someone outside the US has logged into your IU account: UISO's it-incident@iu.edu, read 2026-11-05
+- RDC contact page: https://researchdata.iu.edu/about/contact/

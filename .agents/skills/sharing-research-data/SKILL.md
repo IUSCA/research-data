@@ -16,15 +16,17 @@ before promising anything to a collaborator or a journal.
 
 These questions need an IU office. Contacts are from
 `getting-help-with-research-data` and the sections below.
+Read the KB article cited with a contact for its current form, and cite it.
+A contact marked "not the IU KB" comes from the page named with it.
 
 | Situation | Ask | Send |
 | --- | --- | --- |
-| Signing or negotiating a data agreement, or whether one is needed | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The draft agreement, the data, the partner, and the date needed |
-| Sharing institutional data with any third party | University Data Management Council, iudata@iu.edu | The data, its classification, the recipient, and the purpose |
-| Whether consent allows sharing human subjects data | Human Research Protection Program, irb@iu.edu | The IRB protocol number and consent form |
-| A pending patent, a CRADA, or commercialization | Innovation and Commercialization Office, through IU Research | The data and the planned sharing |
-| A collaborator abroad, or export-controlled data | Research Security Office, rsohelp@iu.edu | The data or technology, the country, and the people |
-| Personal data from people in the EU | IU GDPR contact, gdpr@iu.edu | The data, where it came from, and the recipient |
+| Signing or negotiating a data agreement, or whether one is needed | ORA Research Contracting, Unfunded Agreement Request Form in One.IU (from [IU Research, other agreements](https://research.iu.edu/awards-agreements/research-agreements/other-agreements.html), not the IU KB) | The draft agreement, the data, the partner, and the date needed |
+| Sharing institutional data with any third party | University Data Management Council, iudata@iu.edu ([KB0025401](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025401)) | The data, its classification, the recipient, and the purpose |
+| Whether consent allows sharing human subjects data | Human Research Protection Program, irb@iu.edu ([KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110)) | The IRB protocol number and consent form |
+| A pending patent, a CRADA, or commercialization | Innovation and Commercialization Office, through IU Research (from [IU Research, Innovation and Commercialization](https://research.iu.edu/innovation-commercialization/index.html), not the IU KB) | The data and the planned sharing |
+| A collaborator abroad, or export-controlled data | Research Security Office, rsohelp@iu.edu (from the [RSO export control contacts page](https://rso.iu.edu/export-control/contact-export-control.html), not the IU KB) | The data or technology, the country, and the people |
+| Personal data from people in the EU | IU GDPR contact, gdpr@iu.edu (from the [Data Management FAQ](https://datamanagement.iu.edu/faq/research-classification.html), not the IU KB) | The data, where it came from, and the recipient |
 
 **Recommended.** In these cases, say plainly that the question needs a
 person. Name the office and what to send. Do not offer a best guess as the
@@ -48,7 +50,7 @@ For any other question, see `getting-help-with-research-data`.
   made up of a questionnaire, UISO review, and Data Steward approval.
 - **Required.** Per IU Data Management, the third-party assessment (3PA) "must be completed prior
   to sharing any institutional data with a third party." Contact
-  iudata@iu.edu.
+  iudata@iu.edu ([KB0025401](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025401)).
 - **Required.** Data received under an agreement may be shared only as that
   agreement allows. This holds even after de-identification, if the agreement
   says so.
@@ -153,9 +155,10 @@ to use the data on it.
 
 - **Required.** Export control laws (EAR and ITAR) may limit sharing data or
   technology with foreign persons or sanctioned countries. Contact the
-  Research Security Office export control team, rsohelp@iu.edu.
+  Research Security Office export control team, rsohelp@iu.edu
+  (from the [RSO export control contacts page](https://rso.iu.edu/export-control/contact-export-control.html), not the IU KB).
 - **Required.** Data with personal information from people in the EU may
-  fall under GDPR. Contact gdpr@iu.edu.
+  fall under GDPR. Contact gdpr@iu.edu (from the [Data Management FAQ](https://datamanagement.iu.edu/faq/research-classification.html), not the IU KB).
 
 ## Keep this file current
 
@@ -197,3 +200,9 @@ Checked 2026-10-04.
 - External: University of Michigan SPG 303.06 and Duke Research Policy
   Manual Chapter 5, for the departing-researcher practice; links in
   `navigating-research-data-policy`.
+- [KB0025401](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025401), Request institutional storage in Microsoft shared storage: iudata@iu.edu, read 2026-11-05
+- [KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110), About Terracotta at IU: irb@iu.edu for IRB approval questions, read 2026-11-05
+- IU Research, Innovation and Commercialization, read 2026-11-05:
+  https://research.iu.edu/innovation-commercialization/index.html
+- FAQ on classifying research data, deciding offices:
+  https://datamanagement.iu.edu/faq/research-classification.html

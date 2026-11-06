@@ -18,14 +18,16 @@ the analysis may run.
 
 These questions need an IU office or a data provider. Contacts are from
 `getting-help-with-research-data` and the sections below.
+Read the KB article cited with a contact for its current form, and cite it.
+A contact marked "not the IU KB" comes from the page named with it.
 
 | Situation | Ask | Send |
 | --- | --- | --- |
-| INPC, IU Health, or Eskenazi data, including which RDS form to use | Regenstrief Data Services, askrds@regenstrief.org | The cohort criteria; for extraction, the IRB approval and award |
-| IRB approval or a HIPAA authorization | Human Research Protection Program, irb@iu.edu | The IRB protocol number or draft, and the data sources |
-| Whether data holds PHI, or what HIPAA requires of you | HIPAA Privacy Officer, hipaa@iu.edu | The data elements and where they will be stored |
-| Signing a data agreement | ORA Research Contracting, Unfunded Agreement Request Form in One.IU | The agreement, the data, and the IRB protocol |
-| HCUP access | Social Science Research Commons, ssrc@iu.edu | The database, your role and campus, and your deadline |
+| INPC, IU Health, or Eskenazi data, including which RDS form to use | Regenstrief Data Services, askrds@regenstrief.org (from the [Regenstrief Data Services page](https://www.regenstrief.org/rds/), not the IU KB) | The cohort criteria; for extraction, the IRB approval and award |
+| IRB approval or a HIPAA authorization | Human Research Protection Program, irb@iu.edu ([KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110)) | The IRB protocol number or draft, and the data sources |
+| Whether data holds PHI, or what HIPAA requires of you | HIPAA Privacy Officer, hipaa@iu.edu ([KB0023532](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023532)) | The data elements and where they will be stored |
+| Signing a data agreement | ORA Research Contracting, Unfunded Agreement Request Form in One.IU (from [IU Research, other agreements](https://research.iu.edu/awards-agreements/research-agreements/other-agreements.html), not the IU KB) | The agreement, the data, and the IRB protocol |
+| HCUP access | Social Science Research Commons, ssrc@iu.edu (from the [RDC RADaRS page](https://researchdata.iu.edu/resource-catalog/radars/), not the IU KB) | The database, your role and campus, and your deadline |
 
 **Recommended.** In these cases, say plainly that the question needs a
 person. Name the office and what to send. Do not offer a best guess as the
@@ -76,7 +78,7 @@ The request path, per RDS:
 
 The INPC catalog entry adds: research purpose only, IU IRB approval, current
 HIPAA training, a signed data agreement, and INPC institutional approval for
-identified data. Contact askrds@regenstrief.org.
+identified data. Contact askrds@regenstrief.org (from the [Regenstrief Data Services page](https://www.regenstrief.org/rds/), not the IU KB).
 
 Tools RDS offers include ATLAS (OHDSI) and nDepth for clinical text. RDS also
 takes part in N3C, PCORnet, OHDSI, and the ACT network.
@@ -187,3 +189,8 @@ Checked 2026-10-04.
   https://research.iu.edu/policies/human-subjects-irb/research-data-management.html
 - [KB0023515](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023515),
   RT systems for data containing HIPAA-regulated PHI
+- [KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110), About Terracotta at IU: irb@iu.edu for IRB approval questions, read 2026-11-05
+- [KB0023532](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023532), PHI data elements in the classifications: hipaa@iu.edu, read 2026-11-05
+- IU Research, other research agreements:
+  https://research.iu.edu/awards-agreements/research-agreements/other-agreements.html
+- RADaRS: https://researchdata.iu.edu/resource-catalog/radars/

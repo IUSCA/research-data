@@ -18,12 +18,14 @@ this skill is a lead, not an answer.
 
 These questions need a person. Contacts are from
 `getting-help-with-research-data` and the sections below.
+Read the KB article cited with a contact for its current form, and cite it.
+A contact marked "not the IU KB" comes from the page named with it.
 
 | Situation | Ask | Send |
 | --- | --- | --- |
 | Eligibility, access steps, or timing for a catalog dataset | The entry's Public Contact | The entry, your role and campus, and your deadline |
-| Whether IU already has data, before buying, or a catalog addition | Research Data Commons, iurdc@iu.edu | The dataset or supplier, and the intended use |
-| Secondary data the catalog lacks | IU Libraries Research Data Services, resdata@iu.edu; at IU Indianapolis, dataserv@iu.edu | The research question and where you have searched |
+| Whether IU already has data, before buying, or a catalog addition | Research Data Commons, iurdc@iu.edu (from the [RDC contact page](https://researchdata.iu.edu/about/contact/), not the IU KB) | The dataset or supplier, and the intended use |
+| Secondary data the catalog lacks | IU Libraries Research Data Services, resdata@iu.edu (from the [IU Libraries Research Data Services page](https://libraries.indiana.edu/research-data-services), not the IU KB); at IU Indianapolis, dataserv@iu.edu (from the [RDC DMP consultation page](https://researchdata.iu.edu/resources/dmp-consultation/), not the IU KB) | The research question and where you have searched |
 
 **Recommended.** In these cases, say plainly that the question needs a
 person. Name the office and what to send. Do not offer a best guess as the
@@ -104,16 +106,17 @@ The RDC's guidance for checking whether IU already owns data:
 1. Search the Research Data Catalog.
 2. Search the supplier in BUY.IU. Students cannot.
 3. Search IUCAT or the IU Libraries A–Z database list.
-4. Ask a subject librarian, or Research Data Services at resdata@iu.edu.
+4. Ask a subject librarian, or Research Data Services at resdata@iu.edu
+   (from the [IU Libraries Research Data Services page](https://libraries.indiana.edu/research-data-services), not the IU KB).
 
 If IU does not have it, `using-licensed-and-public-data` covers buying data.
-**Recommended.** Before buying, email iurdc@iu.edu. The RDC catalog exists
+**Recommended.** Before buying, email iurdc@iu.edu (from the [RDC contact page](https://researchdata.iu.edu/about/contact/), not the IU KB). The RDC catalog exists
 partly "to reduce redundancies in data acquisition."
 
 ## Suggest an addition
 
 Anyone can propose a dataset for the catalog by emailing iurdc@iu.edu, per
-the catalog's About page.
+the catalog's About page. No IU KB article lists the address.
 
 **Recommended.** When a lab holds licensed or shareable data that others at
 IU could use, list it in the catalog. A listing prevents duplicate purchases.
@@ -155,3 +158,7 @@ Checked 2026-10-04.
   https://researchdata.iu.edu/faqs/acquiring-data/determine-whether-iu-already-owns-it/
 - All 35 catalog entry pages and their JSON, listed in
   `references/catalog.md`.
+- RDC contact page: https://researchdata.iu.edu/about/contact/
+- IU Libraries Research Data Services:
+  https://libraries.indiana.edu/research-data-services
+- RDC DMP consultation: https://researchdata.iu.edu/resources/dmp-consultation/

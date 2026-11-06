@@ -17,12 +17,14 @@ research data depends on the classification.
 
 These questions need an IU office. Contacts are from
 `getting-help-with-research-data` and the sections below.
+Read the KB article cited with a contact for its current form, and cite it.
+A contact marked "not the IU KB" comes from the page named with it.
 
 | Situation | Ask | Send |
 | --- | --- | --- |
-| A topic in step 3 that "may be" Critical, such as FERPA, GDPR, export control, or CUI | The office in step 3's table; for export control, the Research Security Office, rsohelp@iu.edu | The data elements, their source, and every agreement on them |
-| An unclear or edge-case classification | Data Steward for Research Data, datard@iu.edu | The data elements, why the level is unclear, and the planned use |
-| Restricted or Critical data with an AI tool not approved for it | Data Steward for Research Data, datard@iu.edu | The PI, IRB protocol, sponsor, workflow, and tools (KB0026817) |
+| A topic in step 3 that "may be" Critical, such as FERPA, GDPR, export control, or CUI | The office in step 3's table; for export control, the Research Security Office, rsohelp@iu.edu (from the [RSO export control contacts page](https://rso.iu.edu/export-control/contact-export-control.html), not the IU KB) | The data elements, their source, and every agreement on them |
+| An unclear or edge-case classification | Data Steward for Research Data, datard@iu.edu ([KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817)) | The data elements, why the level is unclear, and the planned use |
+| Restricted or Critical data with an AI tool not approved for it | Data Steward for Research Data, datard@iu.edu ([KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817)) | The PI, IRB protocol, sponsor, workflow, and tools (KB0026817) |
 
 **Recommended.** In these cases, say plainly that the question needs a
 person. Name the office and what to send. Do not offer a best guess as the
@@ -93,12 +95,12 @@ From the IU Data Management FAQ on classifying research data:
 
 | Topic | Who decides |
 | --- | --- |
-| FERPA | DataStu@iu.edu |
+| FERPA | DataStu@iu.edu ([KB0023604](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023604)) |
 | Export control | Research Security Office; see the open item below |
-| GDPR | gdpr@iu.edu |
-| Health data not under HIPAA | The Health Data Steward named in the FAQ |
-| Commercial product | Innovation and Commercialization Office |
-| Contract terms or CUI | SecureMyResearch, securemyresearch@iu.edu |
+| GDPR | gdpr@iu.edu (from the [Data Management FAQ](https://datamanagement.iu.edu/faq/research-classification.html), not the IU KB) |
+| Health data not under HIPAA | The Health Data Steward named in the FAQ, not the IU KB |
+| Commercial product | Innovation and Commercialization Office (from [IU Research, Innovation and Commercialization](https://research.iu.edu/innovation-commercialization/index.html), not the IU KB) |
+| Contract terms or CUI | SecureMyResearch, securemyresearch@iu.edu ([KB0025362](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025362)) |
 
 4. **Required**, per the FAQ applying DM-01. "When your dataset includes any data elements that are
    classified as critical, you must handle... the entire dataset as critical
@@ -147,7 +149,7 @@ that reads files is an AI tool. This applies to the agent reading this skill.
   where classification allows it. The researcher must check (KB0027312).
 - To ask for a project exception, email the Data Steward for Research Data at
   datard@iu.edu. Include the PI, IRB protocol, sponsor, workflow, and tools
-  (KB0026817).
+  ([KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817), which lists the address).
 - KB0027312 asks researchers who plan to use AI tools to complete IU's
   self-attestation form for each project.
 
@@ -237,3 +239,6 @@ Checked 2026-10-04, except as noted.
 - [KB0027312](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0027312), Researcher responsibilities for AI tools with research data
 - Research Security Office, export control contacts:
   https://rso.iu.edu/export-control/contact-export-control.html
+- [KB0025362](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0025362), About SecureMyResearch, read 2026-11-05
+- IU Research, Innovation and Commercialization, read 2026-11-05:
+  https://research.iu.edu/innovation-commercialization/index.html
