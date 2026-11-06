@@ -23,6 +23,15 @@ allowed_emails = [
   "irb@iu.edu", "it-incident@iu.edu", "iudata@iu.edu", "iurdc@iu.edu",
   "kb@iu.edu", "resdata@iu.edu", "rsohelp@iu.edu",
   "securemyresearch@iu.edu", "ssrc@iu.edu",
+  # Added 2026-11-05 for the IU inventory and the health skill; each is a
+  # role address on the unit's own page.
+  "alzstudy@iu.edu", "atmusic@iu.edu", "csr@iu.edu", "digschol@iu.edu",
+  "iadrc@iu.edu", "ictsi@iu.edu", "inbiobnk@iu.edu", "kinsey@iu.edu",
+  "libbus@iu.edu", "libknsy@iu.edu", "ncradbrc@iu.edu", "nsse@iu.edu",
+  "polis@iu.edu",
+  # Added 2026-11-05 for finding-data-in-public-repositories; NOAA NCEI's
+  # archive page names it for deposit questions.
+  "ncei.archive@noaa.gov",
 ]
 
 # Internal hostnames never appear. Public skills name the service.
@@ -31,7 +40,14 @@ internal_hosts = '[\w.-]*bioloop[\w.-]*\.iu\.edu|[\w.-]+\.sca\.iu\.edu'
 [links]
 user_agent = "research-data-skills"
 # These hosts answer scripted requests with 403.
-skip_403_hosts = ["spg.umich.edu", "www.regenstrief.org", "osome.iu.edu"]
+# wonder.cdc.gov and www.cdc.gov answered the checker with 403 on 2026-11-05
+# but served the pages to a browser-like reader the same day.
+# www.ukbiobank.ac.uk refused every scripted read on 2026-11-05; check it by
+# hand (it is an open item in finding-data-in-public-repositories).
+skip_403_hosts = [
+  "spg.umich.edu", "www.regenstrief.org", "osome.iu.edu",
+  "wonder.cdc.gov", "www.cdc.gov", "www.ukbiobank.ac.uk",
+]
 # Resolves from IU and home networks, but neither hdl.handle.net nor IU
 # ScholarWorks answers GitHub's hosted runners (URLError on every retry,
 # 2026-10-08). Check it by hand: it should land on the ScholarWorks item.

@@ -1,12 +1,14 @@
 ---
 name: accessing-health-and-clinical-data
-description: Request and use health and clinical research data at Indiana University, including the Indiana Network for Patient Care (INPC), IU Health and Eskenazi records through Regenstrief Data Services, HCUP, MarketScan claims, All of Us, the Human Connectome Project, and biospecimen data from BC2 and the Komen Tissue Bank. Covers feasibility counts, honest-broker extraction, IRB and HIPAA requirements, data use agreements, and where the data must be analyzed. Use when someone needs patient or medical records (EHR), insurance claims, hospital discharge, or other patient-level data for a study at IU.
+description: Request and use health and clinical research data at Indiana University, including the Indiana Network for Patient Care (INPC), IU Health and Eskenazi records through Regenstrief Data Services, the Indiana Biobank (DNA, omics, and linked clinical data), HCUP, MarketScan claims, All of Us, the Human Connectome Project, Alzheimer's resources (NCRAD and the Indiana ADRC), and biospecimen data from BC2 and the Komen Tissue Bank. Covers feasibility counts, honest-broker extraction, IRB and HIPAA requirements, data use agreements, and where the data must be analyzed. Use when someone needs patient or medical records (EHR), a clinical population with certain medical histories, biobank samples or genotype data, insurance claims, hospital discharge, or other patient-level data for a study at IU.
 ---
 
 # Accessing health and clinical data
 
-Verified 2026-10-08 (the MarketScan catalog entry only) against the
-Research Data Catalog. Other sources were verified 2026-10-04 against
+Verified 2026-11-05 (the Indiana Biobank, NCRAD, Indiana ADRC, and
+Indiana CTSI Data Science and Informatics pages only). Verified 2026-10-08
+(the MarketScan catalog entry only) against the Research Data Catalog.
+Other sources were verified 2026-10-04 against
 Regenstrief Data Services, Indiana CTSI, IU Research, IU Data Management,
 and Research Data Catalog pages. Sources are listed at the end.
 
@@ -27,6 +29,7 @@ A contact marked "not the IU KB" comes from the page named with it.
 | IRB approval or a HIPAA authorization | Human Research Protection Program, irb@iu.edu ([KB0024110](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0024110)) | The IRB protocol number or draft, and the data sources |
 | Whether data holds PHI, or what HIPAA requires of you | HIPAA Privacy Officer, hipaa@iu.edu ([KB0023532](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023532)) | The data elements and where they will be stored |
 | Signing a data agreement | ORA Research Contracting, Unfunded Agreement Request Form in One.IU (from [IU Research, other agreements](https://research.iu.edu/awards-agreements/research-agreements/other-agreements.html), not the IU KB) | The agreement, the data, and the IRB protocol |
+| Indiana Biobank samples, omics, or linked data; quotes and letters of support | Indiana Biobank, inbiobnk@iu.edu (from the [Indiana Biobank access page](https://indianabiobank.org/access-samples), not the IU KB) | The cohort criteria, the specimen or data types, and any grant deadline |
 | HCUP access | Social Science Research Commons, ssrc@iu.edu (from the [RDC RADaRS page](https://researchdata.iu.edu/resource-catalog/radars/), not the IU KB) | The database, your role and campus, and your deadline |
 
 **Recommended.** In these cases, say plainly that the question needs a
@@ -48,9 +51,19 @@ For any other question, see `getting-help-with-research-data`.
 | Diverse national cohort with EHR, surveys, and genomics | All of Us | Tiered | Registration and training; IU holds an institutional DURA |
 | Neuroimaging | Human Connectome Project | De-identified | RDC form plus HCP terms |
 | Tissue and biospecimens | BC² and Komen Tissue Bank | Sample-linked | Committee proposal |
+| DNA, omics, and EHR-linked data on consented Indiana patients | Indiana Biobank | De-identified data in a secure enclave | Portal request and review; DUA and terms of access; IU collaborator for outside researchers |
+| Alzheimer's and dementia biospecimens and data | NCRAD; Indiana Alzheimer's Disease Research Center | Sample-linked | Review committee; cost recovery may apply |
 
 Read the live catalog entry before giving steps. `finding-iu-research-data`
-explains how.
+explains how. The Indiana Biobank, NCRAD, and the Indiana ADRC are not in
+the catalog (Observed 2026-11-05). Its inventory file,
+`references/inventory.md` in `finding-iu-research-data`, lists them.
+
+**Recommended.** For "a clinical population with certain medical
+histories," compare three routes. INPC through RDS gives the broadest
+records. The Indiana Biobank adds DNA and omics for consented patients.
+All of Us gives a national cohort. Get feasibility counts from each before
+choosing.
 
 ## INPC, IU Health, and Eskenazi: Regenstrief Data Services
 
@@ -89,6 +102,63 @@ protocol. Counts show whether the cohort is large enough, at no cost.
 **Recommended.** Use the acknowledgment RDS asks for: "Regenstrief
 Institute, Inc.'s participation in this project is acknowledged for access to
 and expertise in data management."
+
+## Indiana Biobank
+
+**Observed 2026-11-05** on indianabiobank.org. The Indiana Biobank is "a
+statewide initiative, co-developed by Indiana University School of Medicine
+and IU Health," established in 2010.
+
+- **What it holds.** It "collects and banks DNA specimens for broad
+  sharing." It "only offers DNA specimens for broad sharing." It banks other
+  specimen types, such as plasma, serum, and PBMC, for specific studies.
+- **Linked data.** Specimens link to the INPC for "de-identified clinical
+  data, including clinical progression and outcomes data." For certain
+  cohorts, omics data include whole exome sequencing, genome-wide genotype
+  (GWAS) data, RNA transcriptomics, and HLA haplotypes.
+- **Consent.** "Each subject is consented to allow for broad-use of
+  specimens by approved researchers."
+- **Diagnoses.** A Common Diagnoses page lists about 60 diagnoses with
+  subject counts. Use it for a first feasibility check:
+  https://indianabiobank.org/access-samples/common-diagnoses
+- **Data portal.** Its cohort browser of aggregated data is "Open to anyone."
+  To get data, create an account, build a cohort, and request its
+  de-identified data. Requests are reviewed against the Biobank's
+  "scientific and ethical standards." Approved users analyze in "a secure
+  enclave that allows analysis but limits data export."
+- **Who.** "Researchers outside of IU will be required to have an IU
+  collaborator involved in their project."
+- **Required.** Per the Biobank's agreements page, data release needs a
+  Data Use Agreement. Specimens need an Internal Transfer Agreement for IU
+  researchers, or a Material Transfer Agreement for outside organizations.
+  The portal page adds "a Terms of Access Agreement."
+- **Quotes and letters.** Request a quote or a letter of support on its
+  request-a-quote page. Contact inbiobnk@iu.edu (from the
+  [request-a-quote page](https://indianabiobank.org/study-support/request-a-quote), not the IU KB).
+- The Provena Consortium, linked from the Biobank site, offers "limited,
+  de-identified datasets" to academic and industry partners.
+
+**Open item.** The Biobank's pages differ on its size. The home page says
+"over 80,000 patients have consented." The access page says "DNA specimens
+from over 60,000 residents." Neither page states IRB requirements or fees.
+Ask inbiobnk@iu.edu (from the [access page](https://indianabiobank.org/access-samples), not the IU KB).
+
+## Alzheimer's and dementia resources
+
+- **NCRAD**, the National Centralized Repository for Alzheimer's Disease and
+  Related Dementias, is "a biorepository operated by Indiana University with
+  funding from the National Institute on Aging." Register, select samples
+  from its catalog, and apply. Its Biospecimen Review Committee reviews
+  requests, and "The approval is valid for 12 months." Contact
+  alzstudy@iu.edu, or ncradbrc@iu.edu for samples not in the catalog. Both
+  are from the [NCRAD request page](https://ncrad.iu.edu/access-samples/request-samples), not the IU KB.
+  Observed 2026-11-05 on ncrad.iu.edu.
+- **Indiana Alzheimer's Disease Research Center (IADRC)** offers
+  participants, specimens (DNA, RNA, plasma, serum, CSF, PBMC), brain tissue,
+  imaging, and clinical, genetic, and neuropathological data. Submit its
+  Resource Request Form. "A cost recovery fee may be charged." Contact
+  iadrc@iu.edu (from the [IADRC resource request page](https://medicine.iu.edu/research-centers/alzheimers/for-researchers/resource-request), not the IU KB).
+  Observed 2026-11-05.
 
 ## HCUP
 
@@ -164,7 +234,16 @@ ones, unless the data agreement and classification allow it.
 - **Open item.** No public IU Health research data request path outside RDS
   was found.
 - **Open item.** No IU or Indiana CTSI page offering TriNetX was found. RDS
-  names the ACT network for CTSA feasibility.
+  names the ACT network for CTSA feasibility. Indiana CTSI Data Science and
+  Informatics names the ACT Network and OHDSI Atlas for cohort discovery
+  (Observed 2026-11-05).
+- **Open item.** Regenstrief now has a "Regenstrief Data Core" page, which
+  calls itself "a central point of access for data from the Indiana Network
+  for Patient Care." The RDS page still calls RDS "Indiana's honest data
+  broker." Both were live on 2026-11-05. Ask askrds@regenstrief.org which
+  name and request path is current.
+- Re-read the Indiana Biobank's portal, agreements, and sample-type pages
+  each review. Its enrollment is growing fast, so counts age quickly.
 - **Open item.** The INPC size differs by source. The RDS data page says "10
   billion clinical observations." The CTSI service core page says "13 billion
   data elements."
@@ -178,6 +257,19 @@ Checked 2026-10-04.
 - External: Indiana CTSI RDS service core,
   https://indianactsi.org/servicecores/core/75/
 - External: IHIE, https://www.ihie.org/about-us/
+- External: Regenstrief Data Core (checked 2026-11-05),
+  https://www.regenstrief.org/real-world-solutions/regenstrief-data-core/
+- Indiana Biobank (checked 2026-11-05): https://indianabiobank.org/,
+  /access-samples, /access-samples/biobank-data-portal,
+  /access-samples/common-diagnoses, /access-samples/provena,
+  /study-support/sample-types-we-bank, /study-support/mta-ita, and
+  /study-support/request-a-quote
+- NCRAD (checked 2026-11-05): https://ncrad.iu.edu/ and
+  https://ncrad.iu.edu/access-samples/request-samples
+- Indiana ADRC resource request (checked 2026-11-05):
+  https://medicine.iu.edu/research-centers/alzheimers/for-researchers/resource-request
+- Indiana CTSI Data Science and Informatics (checked 2026-11-05):
+  https://indianactsi.org/research/data-informatics/
 - Research Data Catalog entries for INPC, HCUP NIS, NEDS, NASS, and IN SID,
   MarketScan, All of Us, HCP, BC², and KTB; links in the
   `finding-iu-research-data` catalog snapshot.
