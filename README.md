@@ -75,9 +75,10 @@ Sources rank this way:
 
 ## A note for agents and the people using them
 
-A coding agent is an AI tool. IU does not permit research data classified
-Restricted or Critical with third-party AI tools (KB0026817). Most research
-data is Restricted by default. So an agent using these skills should ask for
+A coding agent is an AI tool. REALLMS, IU's on-premises LLM service, is
+approved for research data up to Critical, including PHI (KB0026817); IU
+does not permit research data classified Restricted or Critical with
+third-party AI tools. Most research data is Restricted by default. So an agent using these skills should ask for
 a dataset's classification before opening its files. With Restricted or
 Critical data, it should work from schemas, codebooks, and synthetic samples
 unless it runs on an IU-approved service. `classifying-research-data` has
