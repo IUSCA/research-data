@@ -5,9 +5,10 @@ description: Classify research data under Indiana University policy DM-01 as Pub
 
 # Classifying research data
 
-Verified 2026-11-02 (the Data Storage Finder only; KB articles read that
-day are recorded in `tools/kb-snapshot.json`). Other sources were verified
-2026-10-04 against IU policies DM-01 and DM-02, the IU Data Management
+Verified 2026-11-14 (the AI tools section against KB0026507, KB0026817,
+and KB0027272 only). Verified 2026-11-02 (the Data Storage Finder only; KB
+articles read that day are recorded in `tools/kb-snapshot.json`). Other
+sources were verified 2026-10-04 against IU policies DM-01 and DM-02, the IU Data Management
 site, and the IU Knowledge Base (KB). Sources are listed at the end.
 
 Classify before storing, sharing, or computing. Every other decision about
@@ -134,6 +135,11 @@ linking another source.
 Classification decides which AI tools may touch research data. A coding agent
 that reads files is an AI tool. This applies to the agent reading this skill.
 
+- **Required.** REALLMS, IU's on-premises LLM service, is approved for
+  Public, University-internal, Restricted, and Critical data, including PHI,
+  except research data with contractual, regulatory, or legal constraints
+  (KB0026507, KB0026817, KB0027272). Some Microsoft Foundry models are
+  approved for all four levels, except PCI data (KB0026817).
 - **Required.** Research data classified Restricted or Critical "are not
   permitted to be used with third-party AI tools" (KB0026817).
 - **Required.** Third-party tools licensed by IU, such as ChatGPT Edu,
@@ -142,9 +148,6 @@ that reads files is an AI tool. This applies to the agent reading this skill.
   public-domain data, and with data the Data Steward for Research Data has
   verified as unprotected and free of contract limits. Use your IU account,
   never a personal one (KB0026817).
-- **Required.** REALLMS is approved for Restricted and Critical data,
-  including PHI. Some Microsoft Foundry models are approved for all four
-  levels, except PCI data (KB0026817).
 - **Required.** A data agreement or sponsor award may forbid AI use even
   where classification allows it. The researcher must check (KB0027312).
 - To ask for a project exception, email the Data Steward for Research Data at
@@ -235,7 +238,9 @@ Checked 2026-10-04, except as noted.
 - [KB0026269](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026269), About Microsoft Teams at IU
 - [KB0023604](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023604), Dedicated file storage for sensitive data
 - [KB0023532](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0023532), PHI data elements in the classifications
+- [KB0026507](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026507), Generative AI tools at IU
 - [KB0026817](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0026817), Acceptable use of AI tools with IU research data
+- [KB0027272](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0027272), About the Research and Academic LLM Services (REALLMS) API at IU
 - [KB0027312](https://servicenow.iu.edu/kb?id=kb_article_view&sysparm_article=KB0027312), Researcher responsibilities for AI tools with research data
 - Research Security Office, export control contacts:
   https://rso.iu.edu/export-control/contact-export-control.html
